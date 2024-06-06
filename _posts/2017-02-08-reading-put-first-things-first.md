@@ -62,9 +62,9 @@ url: http://www.caiyunlin.com/2017/02/reading-put-first-things-first/
 
 三代时间管理方法的优缺点如下：
 
-<img src="http://images.caiyunlin.com/plan-01.png" />
+<img src="https://images.caiyunlin.com/plan-01.png" />
 
-<img src="http://images.caiyunlin.com/plan-02.png" />
+<img src="https://images.caiyunlin.com/plan-02.png" />
 
 
 ## 第四代时间管理方法：以角色为基础安排每周日程
@@ -73,7 +73,7 @@ url: http://www.caiyunlin.com/2017/02/reading-put-first-things-first/
 
 这里贴一张示例图，有个直观的概念
 
-<img src="http://images.caiyunlin.com/role-based-weekly-plan.png" />
+<img src="https://images.caiyunlin.com/role-based-weekly-plan.png" />
 
 简单说下我能看到的优点：
 
@@ -89,7 +89,7 @@ url: http://www.caiyunlin.com/2017/02/reading-put-first-things-first/
 1. 你不会再有一步一步执行完成计划，终了却发现这不是我想要的那种迷茫
 
 我参考图片制作了一个Excel，可以接作为电子版或者打印到A4纸上使用。
-[点此下载](http://images.caiyunlin.com/weekly-plan.zip)
+[点此下载](https://images.caiyunlin.com/weekly-plan.zip)
 
 ## 后记
 本书的第三章：相互依赖的协作增效，和第四章：以原则为中心的力量与平和，建议参考《高效能人士的七个习惯》或者其他项目管理的相关书籍，对我来说，这本书提供“要事第一”的实际操作方法比较重要，其他的论述略简单不够全面。

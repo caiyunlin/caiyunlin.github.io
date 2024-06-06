@@ -9,7 +9,7 @@ url: http://www.caiyunlin.com/2018/05/javascript-async-await/
 
 JavaScript 是一个同步的单线程执行的语言，这意味着，JS代码是从头到挨着顺序执行的，这肯定跟我们大多数多JS开发的人心里的想法不符，因为写JS需要很多异步操作，包括请求网络资源(Web)，本地文件资源(NodeJS)，甚至异步的逻辑写太多了，以至于出现回调地狱，而JS也提出了Promise, Async Await等方法来避免回调地狱。
 
-![image](http://images.caiyunlin.com/20200327113611.png)
+![image](https://images.caiyunlin.com/20200327113611.png)
 
 ## 复习JavaScript的回调机制
 做一个小实验，如果你的浏览器是Chrome内核的，可以直接按F12打开`开发者工具`，首先执行一下需要的辅助函数
@@ -38,7 +38,7 @@ write_log("world");
 
 下图可以说明这个运行机制，至始自终只有一个主线程在不停的轮询
 
-![image](http://images.caiyunlin.com/20200327122132.png)
+![image](https://images.caiyunlin.com/20200327122132.png)
 
 我们再用一段代码来测试一下
 
@@ -65,7 +65,7 @@ sleep(5000);
 
 观察结果，我们发现`great`并不是在2秒之后输出的，而是在5秒之后，那是因为，主线程在sleep里面循环了5秒钟之后才有机会去检查回调队列里面的事件，才有机会执行 `write_log("great")` 这句脚本。
 
-![image](http://images.caiyunlin.com/20200327032516.png)
+![image](https://images.caiyunlin.com/20200327032516.png)
 
 ## 回调地狱的由来
 

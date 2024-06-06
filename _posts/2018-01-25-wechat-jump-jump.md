@@ -26,7 +26,7 @@ url: http://www.caiyunlin.com/2018/01/wechat-jump-jump/
 
 ## 实现思路
 
-![](http://images.caiyunlin.com/tiaoyitiao.png)
+![](https://images.caiyunlin.com/tiaoyitiao.png)
 
 
 
@@ -41,7 +41,7 @@ url: http://www.caiyunlin.com/2018/01/wechat-jump-jump/
 因为树莓派刷机过一次，这部分代码没有备份，竟然丢了，还好当时录下了一个视频，留个纪念吧
 
 <video id="video" controls="" preload="none" poster="Calvin Cai">
-	<source id="mp4" src="http://images.caiyunlin.com/tiaoyitiao.mp4" type="video/mp4" />
+	<source id="mp4" src="https://images.caiyunlin.com/tiaoyitiao.mp4" type="video/mp4" />
 </video>
 
 ## 后记

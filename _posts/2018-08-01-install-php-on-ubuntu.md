@@ -211,7 +211,7 @@ SELECT TABLE_SCHEMA '数据库',TABLE_NAME '表',COLUMN_NAME '字段',CHARACTER_
 
 ```
 注意在phpmyadmin，勾选完整内容，才会显示完整的sql语句
-![image](http://images.caiyunlin.com/20210626074750.png)
+![image](https://images.caiyunlin.com/20210626074750.png)
 
 
 ## 迁移域名 

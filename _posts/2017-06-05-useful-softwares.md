@@ -16,43 +16,43 @@ url: http://www.caiyunlin.com/2017/06/windows-useful-softwares/
 
 [桌面截屏 - FSCapture](http://public.caiyunlin.com/fscapture-8.4.zip)
 	非常简单的截图小软件，可以添加水平印，也可以对图像进行简单处理。 可设置水印、撕边、阴影等效果！ 软件还附带放大镜，拾色器，屏幕标尺等小功能。 本站的截图基本是用它在处理的。   
-	![image](http://images.caiyunlin.com/20200406123633.png) 
+	![image](https://images.caiyunlin.com/20200406123633.png) 
 
 ## 桌面动态截屏 - LICEcap
 
 [桌面动态截屏 - LICEcap](http://public.caiyunlin.com/licecap-1.28.zip)
 	LICEcap 是一款短小精悍、免费开源的屏幕录像 GIF 动画制作软件，启动软件后，会显示一个中间透明的窗口框，LICEcap 可以将框框范围内的屏幕内容变化全部捕捉录制下来并保存成 GIF 格式的动画图片。    
-	![image](http://images.caiyunlin.com/20200406122712.png) 
+	![image](https://images.caiyunlin.com/20200406122712.png) 
 
 ## 动态截屏+GIF编辑
 
 [动态截屏+GIF编辑 - ScreenToGif](http://public.caiyunlin.com/screentogif_2.17.1.zip)
     上面一款工具的增强版，除了截屏，还可以编辑GIF文件，增加字幕等   
-    ![image](http://images.caiyunlin.com/20200407100625.png)
+    ![image](https://images.caiyunlin.com/20200407100625.png)
 
 ## 磁盘空间分析 - SpaceSniffer
 
 [磁盘空间分析 - SpaceSniffer](http://public.caiyunlin.com/spacesniffer-1.2.zip)
 	磁盘渐满却不知如何清理文件? SpaceSniffer是一个可以让您硬盘中文件和文件夹的分布情况的应用程序。 SpaceSniffer可以很直观的以区块，数字和颜色来显示硬盘上文件夹，文件大小，还能用筛选器过滤出要找的文件。 点击每个区块能进入该文件夹得到更详细的资料。   
-	![image](http://images.caiyunlin.com/20200406124702.png) 
+	![image](https://images.caiyunlin.com/20200406124702.png) 
 
 ## 密码管理 - KeePass
 
 [密码管理 - KeePass](http://public.caiyunlin.com/keypass-2.42.1.zip)
 	想保存自己众多的密码，但是又不太相信各大厂商？ KeePass 就是专门为了解决这个问题的，它是一款开源的密码管理软件，包含了一个强大的密码产生引擎与加密储存机能，能够提供一个安全的密码储存空间。它所有的数据都是保存在你本地的密码文件里，你也可以用云盘去同步它，但是没有主密码没有人能打开它。 保存好密码，就可以按快捷键Ctrl+Alt+A自动填充网页上的密码输入框，高效又安全。   
-	![image](http://images.caiyunlin.com/20200406011137.png)
+	![image](https://images.caiyunlin.com/20200406011137.png)
 
 ## 远程桌面管理 - MultiDesk
 
 [远程桌面管理 - MultiDesk](http://public.caiyunlin.com/multidesk-3.0.zip)
 	MultiDesk 是一款小巧的远程桌面连接工具（只有一个执行文件，绿色免安装），可以完美替代MSTSC。   
-	![image](http://images.caiyunlin.com/20200406043433.png)
+	![image](https://images.caiyunlin.com/20200406043433.png)
 
 ## 热键管理 - AutoHotKey
 
 [热键管理 - AutoHotKey](http://public.caiyunlin.com/autohotkey-1.0.47.zip)
 	AutoHotkey 是一个可以让你定义自己的热键、热字串或设定的条件自动执行重复性工作，说一下我使用的两个场景，1是我经常随手会记录一个日志，所以我定义了按 Ctrl+T，就会自动在当前光标处插入当前时间，如`2020-04-06 16:11`， 非常方便。    2是我经常写markdown文件的时候，需要截图，我就定义了一个热键，比如`Ctrl+U`，这样我先截图复制图片内容，然后通过这个热键，就会自动调用一个脚本，将内存中的图片保存并且上传到七牛云的空间，然后返回图片URL，再自动粘贴到文档中，非常方便，下面是示例效果。 
-	![image](http://images.caiyunlin.com/20200406051445.gif)
+	![image](https://images.caiyunlin.com/20200406051445.gif)
 
 
 ## 其他软件整理

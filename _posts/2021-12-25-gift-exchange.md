@@ -13,7 +13,7 @@ url: http://www.caiyunlin.com/2021/12/gift-exchange/
 
 需求很简单，就是将 人员名单 和 礼物清单 排成两列，然后随机摇出新的匹对，这样每个人就得到了新的礼物。
 
-![](http://images.caiyunlin.com/gift.jpg)
+![](https://images.caiyunlin.com/gift.jpg)
 
 ## 算法
 
@@ -40,7 +40,7 @@ function shuffle(arr) {
 
 最终实现效果如下：
 
-![](http://images.caiyunlin.com/gift-exchange.gif)
+![](https://images.caiyunlin.com/gift-exchange.gif)
 
 演示地址：<a href=" http://www.caiyunlin.com/dev/gift-exchange/index.html" target="_blank">http://www.caiyunlin.com/dev/gift-exchange/index.html</a>
 

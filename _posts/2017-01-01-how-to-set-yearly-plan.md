@@ -49,7 +49,7 @@ url: http://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/
 
 参考制作年度计划的全景图
 
-<img src="http://images.caiyunlin.com/yearly-plan-01.png" />
+<img src="https://images.caiyunlin.com/yearly-plan-01.png" />
 
 # 第二课：如何写出“走心”的年度计划
 
@@ -163,7 +163,7 @@ url: http://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/
 所以年度计划应该是更多元，更有趣，包含人生多个方面的一种平衡。
 
 如果你也认同这个理念，可以继续参考下面一个九宫格  
-<img src="http://images.caiyunlin.com/yearly-plan-02.png" />
+<img src="https://images.caiyunlin.com/yearly-plan-02.png" />
 
 可以把九宫格想象成一个人，脚下踩着的是基础，一个人的基础要身体健康，得有钱，得朋友有关系，人是一个群体动物  
 中间就是工作和生活的平衡，头顶是3种是精神上的享受  
@@ -259,9 +259,9 @@ url: http://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/
 2. 制定一个循序渐进的计划 先从两周开始，给计划增加3条命(注：3次没有做的机会) 
 3. 积极的记录
 
-<img src="http://images.caiyunlin.com/yearly-plan-03.png" />
+<img src="https://images.caiyunlin.com/yearly-plan-03.png" />
 
-<img src="http://images.caiyunlin.com/yearly-plan-04.png" />
+<img src="https://images.caiyunlin.com/yearly-plan-04.png" />
 
 
 培养习惯中遇到的坑：
@@ -287,7 +287,7 @@ url: http://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/
 
 做项目规划的时候，也是一样  
 
-<img src="http://images.caiyunlin.com/yearly-plan-05.png" />
+<img src="https://images.caiyunlin.com/yearly-plan-05.png" />
 
 现在做的大部分事情，其实有人已经做好了框架，我们应该借助这些框架，比如说
 - 竞品分析，用SWOT框架(Superiority Weakness Opportunity Threats)
@@ -303,7 +303,7 @@ url: http://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/
 
 如果你有多个项目，有多个人在负责，应该如何掌控呢，建议使用甘特图
 
-<img src="http://images.caiyunlin.com/yearly-plan-06.jpg" />
+<img src="https://images.caiyunlin.com/yearly-plan-06.jpg" />
 
 
 # 第八课：用“4D工作法”管理好每天的事情
@@ -327,10 +327,10 @@ url: http://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/
   - 建立一个启动每日计划的仪式 可以是早饭后，用一个待办工具，比如是滴答清单，列当天的待办事项。注意与其写固定时间，不如写场景，比如：开会后，下班回家地铁上，睡觉前
   - 用4D工作法梳理脑袋里所有的事情 别人要你帮忙做事的事情，先经过自己的清单系统，看这件事情是不是最重要紧急的事，是就做，如果不是，就拒绝或者延期处理
   - 把4D工作法梳理的事情写在本子上，立即去做的事情，就写在右边的自由区，标注星标  
-<img src="http://images.caiyunlin.com/yearly-plan-07.png" />
+<img src="https://images.caiyunlin.com/yearly-plan-07.png" />
 
 
 4D工作法在笔纸上的应用  
-<img src="http://images.caiyunlin.com/yearly-plan-08.png" />
+<img src="https://images.caiyunlin.com/yearly-plan-08.png" />
 
 【全文完】

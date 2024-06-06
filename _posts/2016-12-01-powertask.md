@@ -30,14 +30,14 @@ iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com
 ```
 系统出现以下界面代表载入成功  
 
-![image](http://images.caiyunlin.com/20200326043852.png)
+![image](https://images.caiyunlin.com/20200326043852.png)
 
 
 ## 获取使用帮助
 
 比如我们要使用 Get-StringHash , 这是个字符串加密工具，可以使用标准的powershell命令`Get-Help Get-StringHash`查询使用帮助
 
-![image](http://images.caiyunlin.com/20200326044535.png)
+![image](https://images.caiyunlin.com/20200326044535.png)
 
 执行 Get-StringHash 获得 MD5 编码
 ```powershell

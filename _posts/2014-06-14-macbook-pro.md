@@ -9,7 +9,7 @@ url: http://www.caiyunlin.com/2014/06/macbook-pro/
 
 买了个 MacBook Pro，到手已经一段时间，把玩之余，写点使用心得如下：
 
-![](http://images.caiyunlin.com/macbook-pro.jpg)
+![](https://images.caiyunlin.com/macbook-pro.jpg)
 
 ## 配置
 * 13英寸Retina显示屏

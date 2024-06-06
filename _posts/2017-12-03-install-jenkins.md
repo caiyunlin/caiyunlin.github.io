@@ -169,9 +169,9 @@ pipeline {
 
 
 3. 代码提交之后，就回到Jenkins界面，选择"New Item"，填入名称 如 "HelloPipeline" 选择 "Pipeline"，点击"OK"
-![image](http://images.caiyunlin.com/20171204020949.png)
+![image](https://images.caiyunlin.com/20171204020949.png)
 
 1. 在Pipeline配置界面里，"Definition"选择"Pipeline script from SCM","SCM"选择 "Git", 然后填入你的Repository地址，最后点击下面的 "Save" 按钮
-![image](http://images.caiyunlin.com/20171204021321.png)
+![image](https://images.caiyunlin.com/20171204021321.png)
 
 【全文完】

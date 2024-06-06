@@ -43,7 +43,7 @@ url: http://www.caiyunlin.com/2021/07/assembly-primer/
 
 下图是 8086 16位寄存器的简要介绍， AX 是累加寄存器，包含高位 AH 和 低位 AL，所以上述命令就是将数字 10 放到 累加寄存器的低位中。
 
-![image](http://images.caiyunlin.com/20210717115924.png)
+![image](https://images.caiyunlin.com/20210717115924.png)
 
 上图是 16 位CPU的架构图，目前大部分的系统都是 64 位的CPU，可以参考下面的表格，第一行表示位数，高位的包含低位
 
