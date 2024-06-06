@@ -4,7 +4,7 @@ date: 2020-11-05 09:00:00
 categories: [技术]  
 tags: [sublime,markdeep]  
 urlname: powershell-webserver  
-url: http://www.caiyunlin.com/2020/11/powershell-webserver/
+url: https://www.caiyunlin.com/2020/11/powershell-webserver/
 ---
 
 最近项目中有个需求，就是现有很多已经存在的PowerShell脚本，但是命令行的方式不是很方便使用，希望能集成到一个Web界面，简化用户操作难度。
@@ -14,7 +14,7 @@ url: http://www.caiyunlin.com/2020/11/powershell-webserver/
 先创建一个POC，代码如下，保存到 webserver.ps1
 ```powershell
 $http = [System.Net.HttpListener]::new()
-$http.Prefixes.Add("http://localhost:8080/")
+$http.Prefixes.Add("https://localhost:8080/")
 $http.Start()
 
 if ($http.IsListening) {
@@ -33,7 +33,7 @@ while ($http.IsListening) {
 }
 ```
 打开管理员模式运行 PowerShell 窗口，执行 `.\webserver.ps1` , 注意如果遇到执行权限的问题，则先执行 `Set-ExecutionPolicy ByPass`
-执行后，输入 http://localhost:8080，应该可以看到 Hello World! 页面
+执行后，输入 https://localhost:8080，应该可以看到 Hello World! 页面
 
 ![image](https://images.caiyunlin.com/20210508061910.png)
 
@@ -42,7 +42,7 @@ while ($http.IsListening) {
 
 ## 前端页面
 
-上一步，我们实现了一个简单的POC，输入 http://localhost:8080 之后，就能看到 Hello World!。 此时无论输入任何的路径，都是只能返回同样的内容。
+上一步，我们实现了一个简单的POC，输入 https://localhost:8080 之后，就能看到 Hello World!。 此时无论输入任何的路径，都是只能返回同样的内容。
 所以这一步我们需要做一个实现，即，用户输入 html 文件的 url 时候，读取 wwwroot 目录下该文件的内容，显示到浏览器。
 我们先要获取到用户请求的URL,然后匹配到本地的文件路径，如果存在读取文件，不存在，则返回404
 ```powershell

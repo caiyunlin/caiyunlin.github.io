@@ -4,7 +4,7 @@ date: 2018-08-01 09:00:00
 categories : [技术]  
 tags: [ubuntu,php]  
 urlname: ubuntu-install-php-env  
-url: http://www.caiyunlin.com/2018/04/export-excel/  
+url: https://www.caiyunlin.com/2018/04/export-excel/  
 ---
 
 原有的服务器快到期了，趁活动搞了个阿里云的Ubuntu主机，所以将一些测试的php代码移到这台主机下，下面记录一下在阿里云的Ubuntu上安装php环境的步骤。
@@ -49,7 +49,7 @@ sudo vim phpinfo.php
 ?>
 ```
 
-- 在浏览器访问 http://ipaddress/phpinfo.php 查看 `php.ini` 所在的路径 如：`/etc/php/7.2/apache2/php.ini`
+- 在浏览器访问 https://ipaddress/phpinfo.php 查看 `php.ini` 所在的路径 如：`/etc/php/7.2/apache2/php.ini`
 
 - 修改 php.ini ，找到下面两行，去掉前面的`分号`开启对应扩展
 

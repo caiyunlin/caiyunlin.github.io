@@ -4,7 +4,7 @@ date: 2020-04-07 17:44:00 +0800
 categories: [技术]  
 tags: [bash,shell]  
 urlname: bash-experience  
-url: http://www.caiyunlin.com/2020/04/bash-experience/
+url: https://www.caiyunlin.com/2020/04/bash-experience/
 ---
 
 > 最近项目逐步迁移到AWS平台上，相关的代码管理和自动化部署也由TFS迁移到GitHub+Jenkins方案上，为此写了不少的bash脚本用来自动化部署和测试，也踩了相当多的坑，在此总结一下。

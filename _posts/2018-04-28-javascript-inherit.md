@@ -4,7 +4,7 @@ date: 2018-04-28 11:16:45
 categories : [技术]  
 tags: [javascript]  
 urlname: javascript-inherit  
-url: http://www.caiyunlin.com/2018/04/javascript-inherit/
+url: https://www.caiyunlin.com/2018/04/javascript-inherit/
 ---
 
 

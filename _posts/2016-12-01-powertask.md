@@ -4,7 +4,7 @@ date: 2016-12-01 11:37:45
 categories : [技术]   
 tags: [powershell]  
 urlname: powertask  
-url: http://www.caiyunlin.com/2016/12/powertask/  
+url: https://www.caiyunlin.com/2016/12/powertask/  
 ---
 
 在公司的项目中，写了大量的PowerShell脚本去安装软件和部署新的Release，偶尔也会分享PowerShell脚本给其他Team的同事。  
@@ -24,7 +24,7 @@ Set-ExecutionPolicy bypass
 
 3. 复制粘贴，执行以下命令
 ```powershell
-iex (new-object net.webclient).downloadstring('http://www.soft263.com/dev/PowerTask/PowerTask.ps1')
+iex (new-object net.webclient).downloadstring('https://www.soft263.com/dev/PowerTask/PowerTask.ps1')
 # 或者
 iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/cylin2000/powertask/master/PowerTask.ps1?t='+(Get-Random))
 ```

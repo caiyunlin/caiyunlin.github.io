@@ -4,7 +4,7 @@ date: 2017-02-08 11:20:20
 categories : [读书]  
 tags: [reading]  
 urlname: reading-put-first-things-first  
-url: http://www.caiyunlin.com/2017/02/reading-put-first-things-first/  
+url: https://www.caiyunlin.com/2017/02/reading-put-first-things-first/  
 ---
 
 这本书是《高效能人士的七个习惯》中第三个习惯“要事第一”的详解，是一种新式的时间管理方法。   

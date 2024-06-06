@@ -4,7 +4,7 @@ date: 2021-12-25 15:14:00 +0800
 categories: [技术]  
 tags: [javascript]  
 urlname: gift-exchange
-url: http://www.caiyunlin.com/2021/12/gift-exchange/
+url: https://www.caiyunlin.com/2021/12/gift-exchange/
 ---
 
 圣诞节到了，Team里面的小伙伴组织了一个交换礼物的活动，我也奉命接下了写个小工具的任务。
@@ -42,7 +42,7 @@ function shuffle(arr) {
 
 ![](https://images.caiyunlin.com/gift-exchange.gif)
 
-演示地址：<a href=" http://www.caiyunlin.com/dev/gift-exchange/index.html" target="_blank">http://www.caiyunlin.com/dev/gift-exchange/index.html</a>
+演示地址：<a href=" https://www.caiyunlin.com/dev/gift-exchange/index.html" target="_blank">https://www.caiyunlin.com/dev/gift-exchange/index.html</a>
 
 可以直接另存为本地文件修改。
 

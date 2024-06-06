@@ -4,7 +4,7 @@ date: 2016-05-16 11:34:45
 categories : [技术]   
 tags: [angular,javascript]   
 urlname: angular-refact  
-urlpath: http://www.caiyunlin.com/2014/06/angular-refactor/  
+urlpath: https://www.caiyunlin.com/2014/06/angular-refactor/  
 ---
 
 最近在重构项目组的两个前端项目，都是基于AngularJS(1.0版本)的，重构的过程中有些思考，在此记录下来备忘以及参考

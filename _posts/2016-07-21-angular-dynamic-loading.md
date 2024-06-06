@@ -4,7 +4,7 @@ date: 2016-07-21 11:37:45
 categories : [技术]  
 tags: [angular,javascript]  
 urlname: angular-dynamic-loading  
-url: http://www.caiyunlin.com/2016/07/angular-dynamic-loading/  
+url: https://www.caiyunlin.com/2016/07/angular-dynamic-loading/  
 ---
 
 本文使用的AngularJS是基于1.x版本的。

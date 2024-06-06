@@ -4,7 +4,7 @@ date: 2022-04-02 10:03:00 +0800
 categories: [技术]   
 tags: [docker]  
 urlname: docker-namespace
-url: http://www.caiyunlin.com/2022/04/docker-namespace/
+url: https://www.caiyunlin.com/2022/04/docker-namespace/
 ---
 
 之前有篇博客介绍了 docker 的一些常用使用命令，这篇博客来详细研究一下 docker 是如何运行的。

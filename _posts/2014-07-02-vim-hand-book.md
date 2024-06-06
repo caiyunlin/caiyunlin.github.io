@@ -4,7 +4,7 @@ date: 2014-07-02 11:16:45 +0800
 categories : [技术]  
 tags: [vim,editor]  
 urlname: vim-hand-book  
-url: http://www.caiyunlin.com/2014/07/vim-hand-book/  
+url: https://www.caiyunlin.com/2014/07/vim-hand-book/  
 ---
 
 > VIM 是linux下一款优秀的编辑器，但是上手难度略大，网络上可以找到的教程很多，快捷键也非常多，一时很难记住。

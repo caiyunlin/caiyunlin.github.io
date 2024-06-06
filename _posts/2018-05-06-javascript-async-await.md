@@ -4,7 +4,7 @@ date: 2018-05-06 09:00:00
 categories : [技术]  
 tags: [javascript]  
 urlname: javascript-async-await  
-url: http://www.caiyunlin.com/2018/05/javascript-async-await/
+url: https://www.caiyunlin.com/2018/05/javascript-async-await/
 ---
 
 JavaScript 是一个同步的单线程执行的语言，这意味着，JS代码是从头到挨着顺序执行的，这肯定跟我们大多数多JS开发的人心里的想法不符，因为写JS需要很多异步操作，包括请求网络资源(Web)，本地文件资源(NodeJS)，甚至异步的逻辑写太多了，以至于出现回调地狱，而JS也提出了Promise, Async Await等方法来避免回调地狱。

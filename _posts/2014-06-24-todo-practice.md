@@ -4,7 +4,7 @@ date: 2014-06-24 14:04:01
 categories : [随笔]    
 tags: [todo,growth]  
 urlname: todo-practice  
-url: http://www.caiyunlin.com/2014/06/todo-practice/  
+url: https://www.caiyunlin.com/2014/06/todo-practice/  
 ---
 
 今年初读完了Get Things Done(中译本：尽管去做，无压的工作艺术)，也想实践一把GTD，陆陆续续的试用了很多GTD相关的软件，有重量级的如Omni Focus，也有简单的todolist，简要记录各个软件的使用心得如下。

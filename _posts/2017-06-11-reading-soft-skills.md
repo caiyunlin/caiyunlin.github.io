@@ -4,7 +4,7 @@ date: 2017-06-11 19:53:20
 categories : [读书]  
 tags: [reading]  
 urlname: reading-soft-skills  
-url: http://www.caiyunlin.com/2017/06/reading-soft-skills/  
+url: https://www.caiyunlin.com/2017/06/reading-soft-skills/  
 ---
 
 网上经常有程序员情商低的段子，从一个侧面也说明了程序员对代码的给予了很高的关注度，但是忽略了很多其他方面。  
@@ -44,7 +44,7 @@ url: http://www.caiyunlin.com/2017/06/reading-soft-skills/
 大牛的博客
 - https://johnpapa.net/ 
 - https://blog.codinghorror.com/ Stack Overflow 创始人之一
-- http://www.hanselman.com/
+- https://www.hanselman.com/
 - https://www.smartpassiveincome.com/ “无处不在”策略
 
 > 如果你能帮助足够多的人们得到他们想要的东西，你就会得到自己想要的东西。

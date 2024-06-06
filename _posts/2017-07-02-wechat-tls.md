@@ -3,7 +3,7 @@ title: 微信小程序TLS大于等于1.2版本的问题解决
 categories : [技术]  
 date: 2017-07-02 07:00:00  
 urlname: wechat-tls  
-url: http://www.caiyunlin.com/2017/07/wechat-tls/
+url: https://www.caiyunlin.com/2017/07/wechat-tls/
 ---
 
 ## 问题描述

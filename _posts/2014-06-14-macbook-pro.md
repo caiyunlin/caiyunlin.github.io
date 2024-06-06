@@ -4,7 +4,7 @@ date: 2014-06-14 09:15:15
 categories : [随笔]  
 tags: [macbook]  
 urlname: macbook-pro  
-url: http://www.caiyunlin.com/2014/06/macbook-pro/
+url: https://www.caiyunlin.com/2014/06/macbook-pro/
 ---
 
 买了个 MacBook Pro，到手已经一段时间，把玩之余，写点使用心得如下：

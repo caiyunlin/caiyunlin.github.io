@@ -4,7 +4,7 @@ date: 2020-03-18 09:00:00
 categories: [技术]  
 tags: [sublime,markdeep]  
 urlname: sublimetext-markdeep  
-url: http://www.caiyunlin.com/2020/03/sublimetext-markdeep/
+url: https://www.caiyunlin.com/2020/03/sublimetext-markdeep/
 ---
 
 > 本文介绍如何创建一个Sublime Text 3的插件，并用这个插件自动预览markdown文件
@@ -18,7 +18,7 @@ markdeep 是一个轻巧的markdown解析器，只需要一行代码就可以直
 
 ```
 
-markdeep 支持很多插件，如,LaTeX,流程图,日历等，非常强大，详细的使用方法参考： http://casual-effects.com/markdeep/ 
+markdeep 支持很多插件，如,LaTeX,流程图,日历等，非常强大，详细的使用方法参考： https://casual-effects.com/markdeep/ 
 
 但是它有个缺点，就是需要手动将文件名改名为html结尾,这样使用代码编辑器的时候，md的高亮效果就会丢失，且改掉后缀也不是很好的做法。
 
@@ -56,7 +56,7 @@ class MarkdeepPreviewCommand(sublime_plugin.TextCommand):
 		tempfilename = tempfile.mkstemp(".html")
 		f = open(tempfilename[1], 'w')
 		f.write(contents)
-		f.write('<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="http://public.caiyunlin.com/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>')
+		f.write('<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="https://public.caiyunlin.com/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>')
 		f.close()
 		webbrowser.open(tempfilename[1])
 ```
@@ -64,7 +64,7 @@ class MarkdeepPreviewCommand(sublime_plugin.TextCommand):
 
 代码内容比较简单，就是获取当前编辑器的所有内容，然后追加一个markdeep的脚本信息，保存到临时文件，最后用默认浏览器打开。  
 
-有关Sublime Text 3的插件API，可以参考这里 http://www.sublimetext.com/docs/api-reference
+有关Sublime Text 3的插件API，可以参考这里 https://www.sublimetext.com/docs/api-reference
 中文翻译： https://www.oschina.net/translate/sublime-text-plugin-api-reference  
 
 将文件内容保存到Sublime Text 3的Packges路径下，如 `sublime\Data\Packages\MarkDeep\main.py` 这里是创建MarkDeep目录，并且将脚本保存为main.py，系统会自动加载

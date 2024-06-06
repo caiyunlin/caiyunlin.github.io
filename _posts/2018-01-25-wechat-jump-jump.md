@@ -4,7 +4,7 @@ date: 2018-01-25 18:00:00
 categories : [技术]  
 tags: [wechat]  
 urlname: wechat-jump-jump  
-url: http://www.caiyunlin.com/2018/01/wechat-jump-jump/  
+url: https://www.caiyunlin.com/2018/01/wechat-jump-jump/  
 ---
 
 微信最近在微信发布了跳一跳游戏，很是流行，朋友圈很多人都在玩。  

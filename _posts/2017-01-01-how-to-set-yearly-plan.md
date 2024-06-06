@@ -4,7 +4,7 @@ date: 2017-01-01 05:31:00
 categories : [随笔]  
 tags: [reading]  
 urlname: how-to-set-yearly-plan  
-url: http://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/  
+url: https://www.caiyunlin.com/2017/01/how-to-set-yearly-plan/  
 ---
 
 这是一篇听课笔记，是我听喜马拉雅《小强升职记：带你六步制作可实现的年度计划》的总结。

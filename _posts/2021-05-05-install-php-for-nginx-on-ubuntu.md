@@ -4,7 +4,7 @@ date: 2021-05-05 13:45:00 +0800
 categories: [技术]  
 tags: [bash,ubuntu,nginx]  
 urlname: install-php-for-nginx-on-ubuntu 
-url: http://www.caiyunlin.com/2021/05/install-php-for-nginx-on-ubuntu/
+url: https://www.caiyunlin.com/2021/05/install-php-for-nginx-on-ubuntu/
 ---
 
 > 最近整理了一下博客系统，迁移到了Jekyll模板，发现Apache2服务器不支持中文路径，研究了一番没有找到解决方法，测试了nginx可以默认支持中文路径，遂整理一下，把 Apache2 换成了 Nginx
@@ -186,7 +186,7 @@ phpinfo();
 ```
 按下 Ctrl + X ，然后输入 y 和 回车保存内容。
 
-访问你的服务器地址或者域名，如 http://example.com/info.php 如果看到正常的 php 输出，则表示PHP配置安装成功了。
+访问你的服务器地址或者域名，如 https://example.com/info.php 如果看到正常的 php 输出，则表示PHP配置安装成功了。
 
 ## 安装 phpmyadmin
 ```bash

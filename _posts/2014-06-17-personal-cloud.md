@@ -4,7 +4,7 @@ date: 2014-06-17 11:16:45
 categories : [随笔]  
 tags: [cloud]  
 urlname: personal-cloud  
-url: http://www.caiyunlin.com/2014/06/personal-cloud/
+url: https://www.caiyunlin.com/2014/06/personal-cloud/
 ---
 这里说的云不是去申请服务器架设自己的云，而是利用现有的免费同步网盘来打造一个自己的云存储。
 

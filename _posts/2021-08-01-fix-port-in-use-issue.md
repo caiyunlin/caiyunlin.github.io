@@ -4,7 +4,7 @@ date: 2021-08-01 17:15:00 +0800
 categories: [技术]  
 tags: [windows,linux]  
 urlname: fix-port-in-use-issue
-url: http://www.caiyunlin.com/2021/08/fix-port-in-use-issue/
+url: https://www.caiyunlin.com/2021/08/fix-port-in-use-issue/
 ---
 
 端口被占用是指当你的可执行程序运行时需要在某个端口侦听时，发现该端口被其他程序给占用了，导致该应用程序无法执行。

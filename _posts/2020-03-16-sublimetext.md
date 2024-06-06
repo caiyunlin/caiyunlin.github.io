@@ -4,7 +4,7 @@ date: 2020-03-18 09:00:00
 categories: [技术]  
 tags: [sublime]  
 urlname: sublimetext  
-url: http://www.caiyunlin.com/2020/03/sublimetext/
+url: https://www.caiyunlin.com/2020/03/sublimetext/
 ---
 
 ## Sublime Text 简介

@@ -4,7 +4,7 @@ date: 2016-06-20 09:59:45
 categories : [技术]   
 tags: [powershell]  
 urlname: powershell-spider  
-url: http://www.caiyunlin.com/2016/06/powershell-spider/  
+url: https://www.caiyunlin.com/2016/06/powershell-spider/  
 ---
 
 老婆最近迷上了网络小说，在线一张一张网页看的十分的累，而且广告不停弹出，非常烦人。
@@ -13,7 +13,7 @@ url: http://www.caiyunlin.com/2016/06/powershell-spider/
 虽然知道Python在爬虫方面是个强项，但是暂时不是很熟悉，就先用 PowerShell 勉强实现一下，直接上代码：
 
 ```powershell
-$url = "http://m.d8qu.com/104/104936/12850949.html"
+$url = "https://m.d8qu.com/104/104936/12850949.html"
 $out = "c:\novel.html"
 
 $wc = New-Object System.Net.WebClient
@@ -48,7 +48,7 @@ for($i = 1 ; $i -le 614; $i++)
     $fullContent = $fullContent+"$chapterTitle <br/>"
     $fullContent = $fullContent+"$chapterText <br/><br/>"
 
-    $url = "http://m.d8qu.com$nextUrl"
+    $url = "https://m.d8qu.com$nextUrl"
 }
 
 Add-Content $out $fullContent #一起写入，防止不停Add-Content出现文件占用错误

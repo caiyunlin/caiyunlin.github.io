@@ -4,7 +4,7 @@ date: 2017-12-03 13:50:20
 categories : [技术]  
 tags: [jenkins]  
 urlname: install-jenkins  
-url: http://www.caiyunlin.com/2017/12/install-jenkins/  
+url: https://www.caiyunlin.com/2017/12/install-jenkins/  
 ---
 这篇文章简要介绍如何在本地搭建一套Jenkins持续集成系统。
 
@@ -19,7 +19,7 @@ url: http://www.caiyunlin.com/2017/12/install-jenkins/
 
 本地虚拟机可以到官网下载 Ubuntu 16.04 Server 版本镜像。
 
-http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso
+https://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso
 
 注意：安装Ubuntu的时候，请选择安装组件 LAMP 和 SSH Server
 
@@ -36,7 +36,7 @@ Ubuntu准备好了后，我们就可以直接登录系统，开始安装Jenkins�
 wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add - 
 
 # 更新APT库，安装Jenkins
-sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'  
+sudo sh -c 'echo deb https://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'  
 sudo apt-get update  
 sudo apt-get install jenkins  
 ```
@@ -50,14 +50,14 @@ sudo service jenkins start
 sudo service jenkins stop
 
 # 相关路径
-# 访问路径：http://localhost:8080  
+# 访问路径：https://localhost:8080  
 # 安装路径：/var/lib/jenkins  
 # 日志路径：/var/log/jenkins  
 ```
 
 ## 配置 Jenkins
 
-- 在浏览器访问Jenkins地址，注意使用正确的ip地址，可以使用ifconfig查出地址， 如 http://192.168.0.101:8080
+- 在浏览器访问Jenkins地址，注意使用正确的ip地址，可以使用ifconfig查出地址， 如 https://192.168.0.101:8080
 - 在登录页面会需要你输入admin的password，使用下面命令获的密码，输入密码
 
 ```bash

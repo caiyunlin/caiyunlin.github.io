@@ -4,7 +4,7 @@ date: 2016-12-02 06:46:00
 categories : [技术]   
 tags: [powershell]  
 urlname: how-to-create-ps-function   
-url: http://www.caiyunlin.com/2016/12/how-to-create-ps-function/  
+url: https://www.caiyunlin.com/2016/12/how-to-create-ps-function/  
 ---
 
 PowerShell有很多内置的命令，我们自己也会创建很多自定义的脚本，上一篇介绍了我创建的一个在线PowerTask类库就是自定义的脚本，其显示的方式跟默认的命令很类似，如何使自己创建的脚本能有系统自带的命令一样的体验呢？
@@ -31,7 +31,7 @@ $client.DownloadFile($Url, $LocalFile)
 ```
 这样一个基本的下载文件的Function就创建好了，测试一下，效果应该如下
 ```
-PS C:\> .\Download-File.ps1 "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
+PS C:\> .\Download-File.ps1 "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
 PS C:\> ls c:\logo.png
 
     Directory: C:\
@@ -53,9 +53,9 @@ PS C:\>
 .DESCRIPTION
     Download a file from internet, you must provided a valid url of the file
 .EXAMPLE 
-    Download-File "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
+    Download-File "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
 .EXAMPLE 
-    Download-File -Url "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
+    Download-File -Url "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
 .PARAMETER Url
     The Url information for the file to download
 .PARAMETER LocalFile
@@ -116,9 +116,9 @@ Function Download-File {
     .DESCRIPTION
         Download a file from internet, you must provided a valid url of the file
     .EXAMPLE 
-        Download-File "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
+        Download-File "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
     .EXAMPLE 
-        Download-File -Url "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
+        Download-File -Url "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
     .PARAMETER Url
         The Url information for the file to download
     .PARAMETER LocalFile

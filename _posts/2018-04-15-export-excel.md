@@ -4,7 +4,7 @@ date: 2018-04-15 09:16:45
 categories : [技术]
 tags: [javascript,excel,php]
 urlname: export-excel
-url: http://www.caiyunlin.com/2018/04/export-excel/
+url: https://www.caiyunlin.com/2018/04/export-excel/
 ---
 
 导出Excel是开发中遇到的一个常见需求，但是不同的后端服务程序可能需要引入不同的类库，比如PHP需要PHPExcel，C#需要Office组件或者其他第三方Excel解析类。 对于简单的表格数据导出，这里提供另外一个思路，可以不需要引入第三方类库来解决Excel的导出问题。
@@ -66,7 +66,7 @@ header("Content-Disposition:attachment;filename=ExportAll.xls");
 2. 页面模板输出如下格式
 
 ```html
-<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="https://www.w3.org/TR/REC-html40">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>

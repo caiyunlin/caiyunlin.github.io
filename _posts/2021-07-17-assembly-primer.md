@@ -4,7 +4,7 @@ date: 2021-07-17 09:41:00 +0800
 categories: [技术]  
 tags: [bash,ubuntu,assembly]  
 urlname: assembly-primer 
-url: http://www.caiyunlin.com/2021/07/assembly-primer/
+url: https://www.caiyunlin.com/2021/07/assembly-primer/
 ---
 
 最近查一些文章，涉及到了汇编语言，所以翻出一些资料复习一下。

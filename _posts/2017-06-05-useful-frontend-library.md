@@ -4,12 +4,12 @@ categories : [技术]
 tags: [javascript]
 date: 2017-06-05 15:44:00  
 urlname: useful-frontend-library  
-url: http://www.caiyunlin.com/2017/06/useful-frontend-library/  
+url: https://www.caiyunlin.com/2017/06/useful-frontend-library/  
 ---
 
 做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如：
-* 新浪的CDN http://lib.sinaapp.com/  
-* 百度的CDN http://cdn.code.baidu.com/   
+* 新浪的CDN https://lib.sinaapp.com/  
+* 百度的CDN https://cdn.code.baidu.com/   
 
 但是如果我们需要部署在内网，或者需要使用一些不太常见的类库，那么这个时候公共CDN也就不好办了  
 
@@ -18,13 +18,13 @@ url: http://www.caiyunlin.com/2017/06/useful-frontend-library/
 
 ## 约定
 
-1. 以下假设文件部署到 http://www.caiyunlin.com/public 路径下
+1. 以下假设文件部署到 https://www.caiyunlin.com/public 路径下
 
-1. 所有文件存放在public文件夹之下，这样在本地的话，类库的根路径就是 http://www.caiyunlin.com/public, 开发代码中对类库有引用则从路径 /public 开始引用即可
+1. 所有文件存放在public文件夹之下，这样在本地的话，类库的根路径就是 https://www.caiyunlin.com/public, 开发代码中对类库有引用则从路径 /public 开始引用即可
 
-1. 和公共CDN命名方式一样，类库以名称和版本分级目录存在，如：jQuery类库3.2.1版本使用下面链接, http://www.caiyunlin.com/public/jquery/3.2.1/jquery.min.js, 这样有多个版本时不会冲突
+1. 和公共CDN命名方式一样，类库以名称和版本分级目录存在，如：jQuery类库3.2.1版本使用下面链接, https://www.caiyunlin.com/public/jquery/3.2.1/jquery.min.js, 这样有多个版本时不会冲突
 
-1. 引用类库中可以包含相关的demo文件，这样可以方便参考和查错，如： http://www.caiyunlin.com/public/fullcalendar/3.2.0/demos/agenda-views.html
+1. 引用类库中可以包含相关的demo文件，这样可以方便参考和查错，如： https://www.caiyunlin.com/public/fullcalendar/3.2.0/demos/agenda-views.html
 
 1. 类库文件只会按规则增加，不会删除和修改，这样方便旧版正在运行的项目
 

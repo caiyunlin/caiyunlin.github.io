@@ -4,7 +4,7 @@ date: 2016-08-08 09:01:10
 categories : [技术]  
 tags: [angular,rest]  
 urlname: rest-study  
-url: http://www.caiyunlin.com/2016/08/rest-study/  
+url: https://www.caiyunlin.com/2016/08/rest-study/  
 ---
 因前后台分离，使用AngularJS作为纯前端，需要设计一组基于JSON的API，统一前后台的接口规范。
 
@@ -17,7 +17,7 @@ url: http://www.caiyunlin.com/2016/08/rest-study/
 
 
 ## 调查
-首先想到的是REST，设计一套RESTful的方案，如 http://www.dummy.com/api/menu 提供最MENU的管理
+首先想到的是REST，设计一套RESTful的方案，如 https://www.dummy.com/api/menu 提供最MENU的管理
 使用HTTP动词作为操作管理
 
 GET : 获取菜单
@@ -37,8 +37,8 @@ DELETE : 删除菜单
   按照wikipedia的举例，menu和menus是分开的
 
 ```
-GET http://www.store.com/products
-GET http://www.store.com/product/12345
+GET https://www.store.com/products
+GET https://www.store.com/product/12345
 ```
 * REST推荐通过状态码返回出错信息
 
@@ -64,7 +64,7 @@ https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=ACCESS_TOKEN
 ```
 百度地图的API也是
 ```
-http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-placeapi
+https://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-placeapi
 ```
 
 * 虽然HTTP的动作只有4个，但是后台为了操作明了，同样还是需要创建多个function来表示不同的操作内容，前台AngularJS同样需要创建多个function来表示动作
@@ -93,11 +93,11 @@ http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-placeapi
 
 接口只使用GET 和POST 两种动词 , 这样不存在浏览器兼容问题
 ``` javascript
-http://www.dummy.com/api/menu/get    表示获取菜单(单个记录)
-http://www.dummy.com/api/menu/query  表示查询菜单(多条记录)，post数据中加入查询条件
-http://www.dummy.com/api/menu/create 表示创建菜单
-http://www.dummy.com/api/menu/update 表示更新菜单
-http://www.dummy.com/api/menu/delete 表示删除菜单
+https://www.dummy.com/api/menu/get    表示获取菜单(单个记录)
+https://www.dummy.com/api/menu/query  表示查询菜单(多条记录)，post数据中加入查询条件
+https://www.dummy.com/api/menu/create 表示创建菜单
+https://www.dummy.com/api/menu/update 表示更新菜单
+https://www.dummy.com/api/menu/delete 表示删除菜单
 
 结合 AngularJS的 Resource
 
@@ -122,19 +122,19 @@ app.controller('TableCtrl',function($scope, $routeParams, $resource) {
 ```
 * 不需要参数的，或者参数在URL中提供的使用GET方法
 ```
-http://www.dummy.com/api/menu/get 
-http://www.dummy.com/api/menu/get?id=5
-http://www.dummy.com/api/menu/delete?id=6
+https://www.dummy.com/api/menu/get 
+https://www.dummy.com/api/menu/get?id=5
+https://www.dummy.com/api/menu/delete?id=6
 ```
 * 需要提交数据的使用POST方法
 
 ``` javascript
-http://www.dummy.com/api/menu/create
+https://www.dummy.com/api/menu/create
 POST数据如下
 {
     name:"测试菜单"
 }
-http://www.dummy.com/api/menu/update
+https://www.dummy.com/api/menu/update
 {
     id:"5",
     name:"新菜单"
@@ -163,7 +163,7 @@ http://www.dummy.com/api/menu/update
 }
 ```
 
-http://www.dummy.com/api/menu/help 获取menu下的接口说明文档，以json返回，这样接口就可以像SOAP那样，自说明
+https://www.dummy.com/api/menu/help 获取menu下的接口说明文档，以json返回，这样接口就可以像SOAP那样，自说明
 这个只是一个设想，需完善
 
 ``` javascript
@@ -189,10 +189,10 @@ http://www.dummy.com/api/menu/help 获取menu下的接口说明文档，以json�
 
 https://zh.wikipedia.org/zh-cn/REST
 https://zh.wikipedia.org/zh-cn/SOAP 
-http://www.infoq.com/cn/articles/rest-introduction
-http://mp.weixin.qq.com/wiki/10/0234e39a2025342c17a7d23595c6b40a.html
-http://mindhacks.cn/2009/01/16/hammers-and-nails/
-http://blog.csdn.net/pongba/article/details/3796771
+https://www.infoq.com/cn/articles/rest-introduction
+https://mp.weixin.qq.com/wiki/10/0234e39a2025342c17a7d23595c6b40a.html
+https://mindhacks.cn/2009/01/16/hammers-and-nails/
+https://blog.csdn.net/pongba/article/details/3796771
 
 ## 多年以后的后记
 
