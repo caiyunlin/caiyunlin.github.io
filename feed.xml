@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Calvin's Blog</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2024-06-09T12:45:58+08:00</updated>
+  <updated>2024-06-09T13:29:15+08:00</updated>
   <author>
     <name>Calvin</name>
     <uri>/</uri>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Docker 是如何运行的</title>
-    <link href="/2022/04/docker-namespace/" rel="alternate" type="text/html" title="Docker 是如何运行的" />
+    <link href="/posts/docker-namespace/" rel="alternate" type="text/html" title="Docker 是如何运行的" />
     <published>2022-04-02T10:03:00+08:00</published>
   
     <updated>2024-06-09T11:25:02+08:00</updated>
   
-    <id>/2022/04/docker-namespace/</id>
-    <content src="/2022/04/docker-namespace/" />
+    <id>/posts/docker-namespace/</id>
+    <content src="/posts/docker-namespace/" />
     <author>
       <name>Calvin</name>
     </author>
@@ -56,13 +56,13 @@
   
   <entry>
     <title>圣诞特辑-交换礼物</title>
-    <link href="/2021/12/gift-exchange/" rel="alternate" type="text/html" title="圣诞特辑-交换礼物" />
+    <link href="/posts/gift-exchange/" rel="alternate" type="text/html" title="圣诞特辑-交换礼物" />
     <published>2021-12-25T15:14:00+08:00</published>
   
     <updated>2024-06-09T11:25:02+08:00</updated>
   
-    <id>/2021/12/gift-exchange/</id>
-    <content src="/2021/12/gift-exchange/" />
+    <id>/posts/gift-exchange/</id>
+    <content src="/posts/gift-exchange/" />
     <author>
       <name>Calvin</name>
     </author>
@@ -107,13 +107,13 @@ function shuffle(arr) {
   
   <entry>
     <title>C# Async Await 探究</title>
-    <link href="/2021/08/csharp-async-await/" rel="alternate" type="text/html" title="C# Async Await 探究" />
+    <link href="/posts/csharp-async-await/" rel="alternate" type="text/html" title="C# Async Await 探究" />
     <published>2021-08-12T15:14:00+08:00</published>
   
     <updated>2024-06-09T11:25:02+08:00</updated>
   
-    <id>/2021/08/csharp-async-await/</id>
-    <content src="/2021/08/csharp-async-await/" />
+    <id>/posts/csharp-async-await/</id>
+    <content src="/posts/csharp-async-await/" />
     <author>
       <name>Calvin</name>
     </author>
@@ -142,13 +142,13 @@ function shuffle(arr) {
   
   <entry>
     <title>解决端口占用问题</title>
-    <link href="/2021/08/fix-port-in-use-issue/" rel="alternate" type="text/html" title="解决端口占用问题" />
+    <link href="/posts/fix-port-in-use-issue/" rel="alternate" type="text/html" title="解决端口占用问题" />
     <published>2021-08-01T17:15:00+08:00</published>
   
     <updated>2024-06-09T11:25:02+08:00</updated>
   
-    <id>/2021/08/fix-port-in-use-issue/</id>
-    <content src="/2021/08/fix-port-in-use-issue/" />
+    <id>/posts/fix-port-in-use-issue/</id>
+    <content src="/posts/fix-port-in-use-issue/" />
     <author>
       <name>Calvin</name>
     </author>
@@ -195,13 +195,13 @@ netstat -ano | find &amp;quot;4000&amp;quot;
   
   <entry>
     <title>汇编语言基础</title>
-    <link href="/2021/07/assembly-primer/" rel="alternate" type="text/html" title="汇编语言基础" />
+    <link href="/posts/assembly-primer/" rel="alternate" type="text/html" title="汇编语言基础" />
     <published>2021-07-17T09:41:00+08:00</published>
   
     <updated>2024-06-09T11:25:02+08:00</updated>
   
-    <id>/2021/07/assembly-primer/</id>
-    <content src="/2021/07/assembly-primer/" />
+    <id>/posts/assembly-primer/</id>
+    <content src="/posts/assembly-primer/" />
     <author>
       <name>Calvin</name>
     </author>

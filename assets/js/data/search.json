@@ -2,7 +2,7 @@
   
   {
     "title": "Docker 是如何运行的",
-    "url": "/2022/04/docker-namespace/",
+    "url": "/posts/docker-namespace/",
     "categories": "技术",
     "tags": "docker",
     "date": "2022-04-02 10:03:00 +0800",
@@ -19,7 +19,7 @@
   
   {
     "title": "圣诞特辑-交换礼物",
-    "url": "/2021/12/gift-exchange/",
+    "url": "/posts/gift-exchange/",
     "categories": "技术",
     "tags": "javascript",
     "date": "2021-12-25 15:14:00 +0800",
@@ -36,7 +36,7 @@
   
   {
     "title": "C# Async Await 探究",
-    "url": "/2021/08/csharp-async-await/",
+    "url": "/posts/csharp-async-await/",
     "categories": "技术",
     "tags": "csharp",
     "date": "2021-08-12 15:14:00 +0800",
@@ -53,7 +53,7 @@
   
   {
     "title": "解决端口占用问题",
-    "url": "/2021/08/fix-port-in-use-issue/",
+    "url": "/posts/fix-port-in-use-issue/",
     "categories": "技术",
     "tags": "windows, linux",
     "date": "2021-08-01 17:15:00 +0800",
@@ -70,7 +70,7 @@
   
   {
     "title": "汇编语言基础",
-    "url": "/2021/07/assembly-primer/",
+    "url": "/posts/assembly-primer/",
     "categories": "技术",
     "tags": "bash, ubuntu, assembly",
     "date": "2021-07-17 09:41:00 +0800",
@@ -87,7 +87,7 @@
   
   {
     "title": "在 Ubuntu 上安装 Nginx 并支持 PHP",
-    "url": "/2021/05/install-php-for-nginx-on-ubuntu/",
+    "url": "/posts/install-php-for-nginx-on-ubuntu/",
     "categories": "技术",
     "tags": "bash, ubuntu, nginx",
     "date": "2021-05-05 13:45:00 +0800",
@@ -104,7 +104,7 @@
   
   {
     "title": "基于 PowerShell 的 Web Server 简单实现",
-    "url": "/2020/11/powershell-webserver/",
+    "url": "/posts/powershell-webserver/",
     "categories": "技术",
     "tags": "sublime, markdeep",
     "date": "2020-11-05 17:00:00 +0800",
@@ -121,7 +121,7 @@
   
   {
     "title": "Bash 踩坑指南",
-    "url": "/2020/04/bash-experience/",
+    "url": "/posts/bash-experience/",
     "categories": "技术",
     "tags": "bash, shell",
     "date": "2020-04-07 17:44:00 +0800",
@@ -138,7 +138,7 @@
   
   {
     "title": "Docker 使用整理",
-    "url": "/2020/03/docker/",
+    "url": "/posts/docker/",
     "categories": "技术",
     "tags": "bash, shell, docker",
     "date": "2020-03-25 17:44:00 +0800",
@@ -155,7 +155,7 @@
   
   {
     "title": "给 Sublime Text 创建一个 markdeep 插件",
-    "url": "/2020/03/sublimetext-markdeep/",
+    "url": "/posts/sublimetext-markdeep/",
     "categories": "技术",
     "tags": "sublime, markdeep",
     "date": "2020-03-18 17:00:00 +0800",
@@ -172,7 +172,7 @@
   
   {
     "title": "Sublime Text 使用小结",
-    "url": "/2020/03/sublimetext/",
+    "url": "/posts/sublimetext/",
     "categories": "技术",
     "tags": "sublime",
     "date": "2020-03-18 17:00:00 +0800",
@@ -189,7 +189,7 @@
   
   {
     "title": "在 Ubuntu 上安装配置 PHP 环境",
-    "url": "/2018/08/install-php-on-ubuntu/",
+    "url": "/posts/install-php-on-ubuntu/",
     "categories": "技术",
     "tags": "ubuntu, php",
     "date": "2018-08-01 17:00:00 +0800",
@@ -206,7 +206,7 @@
   
   {
     "title": "如何在 JavaScript 中使用 Async Await",
-    "url": "/2018/05/javascript-async-await/",
+    "url": "/posts/javascript-async-await/",
     "categories": "技术",
     "tags": "javascript",
     "date": "2018-05-06 17:00:00 +0800",
@@ -223,7 +223,7 @@
   
   {
     "title": "Javascript 对象继承",
-    "url": "/2018/04/javascript-inherit/",
+    "url": "/posts/javascript-inherit/",
     "categories": "技术",
     "tags": "javascript",
     "date": "2018-04-28 19:16:45 +0800",
@@ -240,7 +240,7 @@
   
   {
     "title": "一个简便的 Excel 导出方案",
-    "url": "/2018/04/export-excel/",
+    "url": "/posts/export-excel/",
     "categories": "技术",
     "tags": "javascript, excel, php",
     "date": "2018-04-15 17:16:45 +0800",
@@ -257,7 +257,7 @@
   
   {
     "title": "微信跳一跳-物理外挂",
-    "url": "/2018/01/wechat-jump-jump/",
+    "url": "/posts/wechat-jump-jump/",
     "categories": "技术",
     "tags": "wechat",
     "date": "2018-01-26 02:00:00 +0800",
@@ -274,7 +274,7 @@
   
   {
     "title": "搭建本地的 Jenkins 持续集成系统",
-    "url": "/2017/12/install-jenkins/",
+    "url": "/posts/install-jenkins/",
     "categories": "技术",
     "tags": "jenkins",
     "date": "2017-12-03 21:50:20 +0800",
@@ -291,7 +291,7 @@
   
   {
     "title": "微信小程序TLS大于等于1.2版本的问题解决",
-    "url": "/2017/07/wechat-tls/",
+    "url": "/posts/wechat-tls/",
     "categories": "技术",
     "tags": "",
     "date": "2017-07-02 15:00:00 +0800",
@@ -308,7 +308,7 @@
   
   {
     "title": "微信使用 JSSDK 分享 OAuth 链接的问题",
-    "url": "/2017/06/wechat-shareappmessage-bug/",
+    "url": "/posts/wechat-shareappmessage-bug/",
     "categories": "技术",
     "tags": "",
     "date": "2017-06-28 15:33:00 +0800",
@@ -325,7 +325,7 @@
   
   {
     "title": "《软技能》读书笔记",
-    "url": "/2017/06/reading-soft-skills/",
+    "url": "/posts/reading-soft-skills/",
     "categories": "读书",
     "tags": "reading",
     "date": "2017-06-12 03:53:20 +0800",
@@ -342,7 +342,7 @@
   
   {
     "title": "常用前端类库整理",
-    "url": "/2017/06/useful-frontend-library/",
+    "url": "/posts/useful-frontend-library/",
     "categories": "技术",
     "tags": "javascript",
     "date": "2017-06-05 23:44:00 +0800",
@@ -359,7 +359,7 @@
   
   {
     "title": "Windows 下好用的软件整理",
-    "url": "/2017/06/useful-softwares/",
+    "url": "/posts/useful-softwares/",
     "categories": "技术",
     "tags": "vim, editor, powershell",
     "date": "2017-06-05 22:50:00 +0800",
@@ -376,7 +376,7 @@
   
   {
     "title": "《要事第一》 读书笔记",
-    "url": "/2017/02/reading-put-first-things-first/",
+    "url": "/posts/reading-put-first-things-first/",
     "categories": "读书",
     "tags": "reading",
     "date": "2017-02-08 19:20:20 +0800",
@@ -393,7 +393,7 @@
   
   {
     "title": "如何制作可实现的年度计划",
-    "url": "/2017/01/how-to-set-yearly-plan/",
+    "url": "/posts/how-to-set-yearly-plan/",
     "categories": "随笔",
     "tags": "reading",
     "date": "2017-01-01 13:31:00 +0800",
@@ -410,7 +410,7 @@
   
   {
     "title": "如何创建标准的 PowerShell 函数",
-    "url": "/2016/12/how-to-create-ps-function/",
+    "url": "/posts/how-to-create-ps-function/",
     "categories": "技术",
     "tags": "powershell",
     "date": "2016-12-02 14:46:00 +0800",
@@ -427,7 +427,7 @@
   
   {
     "title": "在线的PowerShell类库 - PowerTask",
-    "url": "/2016/12/powertask/",
+    "url": "/posts/powertask/",
     "categories": "技术",
     "tags": "powershell",
     "date": "2016-12-01 19:37:45 +0800",
@@ -444,7 +444,7 @@
   
   {
     "title": "基于REST的接口定义思考",
-    "url": "/2016/08/rest-study/",
+    "url": "/posts/rest-study/",
     "categories": "技术",
     "tags": "angular, rest",
     "date": "2016-08-08 17:01:10 +0800",
@@ -461,7 +461,7 @@
   
   {
     "title": "AngularJS 动态加载的思考",
-    "url": "/2016/07/angular-dynamic-loading/",
+    "url": "/posts/angular-dynamic-loading/",
     "categories": "技术",
     "tags": "angular, javascript",
     "date": "2016-07-21 19:37:45 +0800",
@@ -478,7 +478,7 @@
   
   {
     "title": "PowerShell小说爬虫",
-    "url": "/2016/06/powershell-spider/",
+    "url": "/posts/powershell-spider/",
     "categories": "技术",
     "tags": "powershell",
     "date": "2016-06-20 17:59:45 +0800",
@@ -495,7 +495,7 @@
   
   {
     "title": "Angular项目结构思考",
-    "url": "/2016/05/angular-refactor/",
+    "url": "/posts/angular-refactor/",
     "categories": "技术",
     "tags": "angular, javascript",
     "date": "2016-05-16 19:34:45 +0800",
@@ -512,7 +512,7 @@
   
   {
     "title": "VIM 快速上手指南",
-    "url": "/2014/07/vim-hand-book/",
+    "url": "/posts/vim-hand-book/",
     "categories": "技术",
     "tags": "vim, editor",
     "date": "2014-07-02 11:16:45 +0800",
@@ -529,7 +529,7 @@
   
   {
     "title": "Todo 软件使用小结",
-    "url": "/2014/06/todo-practice/",
+    "url": "/posts/todo-practice/",
     "categories": "随笔",
     "tags": "todo, growth",
     "date": "2014-06-24 22:04:01 +0800",
@@ -546,7 +546,7 @@
   
   {
     "title": "打造个人本地云",
-    "url": "/2014/06/personal-cloud/",
+    "url": "/posts/personal-cloud/",
     "categories": "随笔",
     "tags": "cloud",
     "date": "2014-06-17 19:16:45 +0800",
@@ -563,7 +563,7 @@
   
   {
     "title": "MacBook Pro 使用小结",
-    "url": "/2014/06/macbook-pro/",
+    "url": "/posts/macbook-pro/",
     "categories": "随笔",
     "tags": "macbook",
     "date": "2014-06-14 17:15:15 +0800",
@@ -580,7 +580,7 @@
   
   {
     "title": "分享几个.NET写的小工具",
-    "url": "/2014/06/personal-tools/",
+    "url": "/posts/personal-tools/",
     "categories": "技术",
     "tags": "xslt, regex",
     "date": "2014-06-09 19:06:45 +0800",
