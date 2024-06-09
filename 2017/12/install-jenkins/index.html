@@ -44,7 +44,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-01-01T08:48:42+08:00","datePublished":"2017-12-03T21:50:20+08:00","description":"这篇文章简要介绍如何在本地搭建一套Jenkins持续集成系统。","headline":"搭建本地的 Jenkins 持续集成系统","mainEntityOfPage":{"@type":"WebPage","@id":"/2017/12/install-jenkins/"},"url":"/2017/12/install-jenkins/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-09T11:25:02+08:00","datePublished":"2017-12-03T21:50:20+08:00","description":"这篇文章简要介绍如何在本地搭建一套Jenkins持续集成系统。","headline":"搭建本地的 Jenkins 持续集成系统","mainEntityOfPage":{"@type":"WebPage","@id":"/2017/12/install-jenkins/"},"url":"/2017/12/install-jenkins/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -818,13 +818,13 @@
 
 <time
   
-  data-ts="1640998122"
+  data-ts="1717903502"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2022/01/01
+  2024/06/09
 </time>
 
         </span>
@@ -896,7 +896,7 @@
 
 <p>本地虚拟机可以到官网下载 Ubuntu 16.04 Server 版本镜像。</p>
 
-<p>http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso</p>
+<p>https://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso</p>
 
 <p>注意：安装Ubuntu的时候，请选择安装组件 LAMP 和 SSH Server</p>
 
@@ -920,7 +920,7 @@
 wget <span class="nt">-q</span> <span class="nt">-O</span> - https://jenkins-ci.org/debian/jenkins-ci.org.key | <span class="nb">sudo </span>apt-key add - 
 
 <span class="c"># 更新APT库，安装Jenkins</span>
-<span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ &gt; /etc/apt/sources.list.d/jenkins.list'</span>  
+<span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo deb https://pkg.jenkins-ci.org/debian-stable binary/ &gt; /etc/apt/sources.list.d/jenkins.list'</span>  
 <span class="nb">sudo </span>apt-get update  
 <span class="nb">sudo </span>apt-get <span class="nb">install </span>jenkins  
 </pre></td></tr></tbody></table></code></div></div>
@@ -944,7 +944,7 @@ wget <span class="nt">-q</span> <span class="nt">-O</span> - https://jenkins-ci.
 <span class="nb">sudo </span>service jenkins stop
 
 <span class="c"># 相关路径</span>
-<span class="c"># 访问路径：http://localhost:8080  </span>
+<span class="c"># 访问路径：https://localhost:8080  </span>
 <span class="c"># 安装路径：/var/lib/jenkins  </span>
 <span class="c"># 日志路径：/var/log/jenkins  </span>
 </pre></td></tr></tbody></table></code></div></div>
@@ -952,7 +952,7 @@ wget <span class="nt">-q</span> <span class="nt">-O</span> - https://jenkins-ci.
 <h2 id="配置-jenkins"><span class="me-2">配置 Jenkins</span><a href="#配置-jenkins" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <ul>
-  <li>在浏览器访问Jenkins地址，注意使用正确的ip地址，可以使用ifconfig查出地址， 如 http://192.168.0.101:8080</li>
+  <li>在浏览器访问Jenkins地址，注意使用正确的ip地址，可以使用ifconfig查出地址， 如 https://192.168.0.101:8080</li>
   <li>在登录页面会需要你输入admin的password，使用下面命令获的密码，输入密码</li>
 </ul>
 
@@ -1145,11 +1145,11 @@ newgrp docker
 <ol>
   <li>
     <p>代码提交之后，就回到Jenkins界面，选择”New Item”，填入名称 如 “HelloPipeline” 选择 “Pipeline”，点击”OK”
-<a href="http://images.caiyunlin.com/20171204020949.png" class="popup img-link  shimmer"><img src="http://images.caiyunlin.com/20171204020949.png" alt="image" loading="lazy"></a></p>
+<a href="https://images.caiyunlin.com/20171204020949.png" class="popup img-link  shimmer"><img src="https://images.caiyunlin.com/20171204020949.png" alt="image" loading="lazy"></a></p>
   </li>
   <li>
     <p>在Pipeline配置界面里，”Definition”选择”Pipeline script from SCM”,”SCM”选择 “Git”, 然后填入你的Repository地址，最后点击下面的 “Save” 按钮
-<a href="http://images.caiyunlin.com/20171204021321.png" class="popup img-link  shimmer"><img src="http://images.caiyunlin.com/20171204021321.png" alt="image" loading="lazy"></a></p>
+<a href="https://images.caiyunlin.com/20171204021321.png" class="popup img-link  shimmer"><img src="https://images.caiyunlin.com/20171204021321.png" alt="image" loading="lazy"></a></p>
   </li>
 </ol>
 
@@ -1280,21 +1280,7 @@ newgrp docker
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2014/07/vim-hand-book/">VIM 快速上手指南</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2021/12/gift-exchange/">圣诞特辑-交换礼物</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2022/04/docker-namespace/">Docker 是如何运行的</a>
+          <a href="/2020/03/sublimetext-markdeep/">给 Sublime Text 创建一个 markdeep 插件</a>
         </li>
       
         
@@ -1308,7 +1294,21 @@ newgrp docker
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2021/08/csharp-async-await/">C# Async Await 探究</a>
+          <a href="/2020/04/bash-experience/">Bash 踩坑指南</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2020/11/powershell-webserver/">基于 PowerShell 的 Web Server 简单实现</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2021/05/install-php-for-nginx-on-ubuntu/">在 Ubuntu 上安装 Nginx 并支持 PHP</a>
         </li>
       
     </ul>
@@ -2467,13 +2467,13 @@ newgrp docker
               <div class="text-muted">
                 <p>做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如：
 
-  新浪的CDN http://lib.sinaapp.com/
-  百度的CDN http://cdn.code.baidu.com/
+  新浪的CDN https://lib.sinaapp.com/
+  百度的CDN https://cdn.code.baidu.com/
 
 
 但是如果我们需要部署在内网，或者需要使用一些不太常见的类库，那么这个时候公共CDN也就不好办了
 
-这里提供一个思路，我们可以创建一个自己的静态公共库方便重复使用...</p>
+这里提供一个思路，我们可以创建一个自己的静态公共库方便重复...</p>
               </div>
             </div>
           </a>

@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Calvin's Blog</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2024-06-09T11:21:51+08:00</updated>
+  <updated>2024-06-09T11:25:38+08:00</updated>
   <author>
     <name>Calvin</name>
     <uri>/</uri>
@@ -24,7 +24,7 @@
     <link href="/2022/04/docker-namespace/" rel="alternate" type="text/html" title="Docker 是如何运行的" />
     <published>2022-04-02T10:03:00+08:00</published>
   
-    <updated>2022-05-09T18:14:16+08:00</updated>
+    <updated>2024-06-09T11:25:02+08:00</updated>
   
     <id>/2022/04/docker-namespace/</id>
     <content src="/2022/04/docker-namespace/" />
@@ -59,7 +59,7 @@
     <link href="/2021/12/gift-exchange/" rel="alternate" type="text/html" title="圣诞特辑-交换礼物" />
     <published>2021-12-25T15:14:00+08:00</published>
   
-    <updated>2022-05-09T18:14:16+08:00</updated>
+    <updated>2024-06-09T11:25:02+08:00</updated>
   
     <id>/2021/12/gift-exchange/</id>
     <content src="/2021/12/gift-exchange/" />
@@ -110,7 +110,7 @@ function shuffle(arr) {
     <link href="/2021/08/csharp-async-await/" rel="alternate" type="text/html" title="C# Async Await 探究" />
     <published>2021-08-12T15:14:00+08:00</published>
   
-    <updated>2022-01-01T20:44:23+08:00</updated>
+    <updated>2024-06-09T11:25:02+08:00</updated>
   
     <id>/2021/08/csharp-async-await/</id>
     <content src="/2021/08/csharp-async-await/" />
@@ -145,7 +145,7 @@ function shuffle(arr) {
     <link href="/2021/08/fix-port-in-use-issue/" rel="alternate" type="text/html" title="解决端口占用问题" />
     <published>2021-08-01T17:15:00+08:00</published>
   
-    <updated>2022-01-01T08:48:42+08:00</updated>
+    <updated>2024-06-09T11:25:02+08:00</updated>
   
     <id>/2021/08/fix-port-in-use-issue/</id>
     <content src="/2021/08/fix-port-in-use-issue/" />
@@ -198,7 +198,7 @@ netstat -ano | find &amp;quot;4000&amp;quot;
     <link href="/2021/07/assembly-primer/" rel="alternate" type="text/html" title="汇编语言基础" />
     <published>2021-07-17T09:41:00+08:00</published>
   
-    <updated>2022-01-01T10:57:14+08:00</updated>
+    <updated>2024-06-09T11:25:02+08:00</updated>
   
     <id>/2021/07/assembly-primer/</id>
     <content src="/2021/07/assembly-primer/" />

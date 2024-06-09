@@ -44,7 +44,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-01-01T08:48:42+08:00","datePublished":"2016-12-02T14:46:00+08:00","description":"PowerShell有很多内置的命令，我们自己也会创建很多自定义的脚本，上一篇介绍了我创建的一个在线PowerTask类库就是自定义的脚本，其显示的方式跟默认的命令很类似，如何使自己创建的脚本能有系统自带的命令一样的体验呢？","headline":"如何创建标准的 PowerShell 函数","mainEntityOfPage":{"@type":"WebPage","@id":"/2016/12/how-to-create-ps-function/"},"url":"/2016/12/how-to-create-ps-function/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-09T11:25:02+08:00","datePublished":"2016-12-02T14:46:00+08:00","description":"PowerShell有很多内置的命令，我们自己也会创建很多自定义的脚本，上一篇介绍了我创建的一个在线PowerTask类库就是自定义的脚本，其显示的方式跟默认的命令很类似，如何使自己创建的脚本能有系统自带的命令一样的体验呢？","headline":"如何创建标准的 PowerShell 函数","mainEntityOfPage":{"@type":"WebPage","@id":"/2016/12/how-to-create-ps-function/"},"url":"/2016/12/how-to-create-ps-function/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -649,13 +649,13 @@
 
 <time
   
-  data-ts="1640998122"
+  data-ts="1717903502"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2022/01/01
+  2024/06/09
 </time>
 
         </span>
@@ -754,7 +754,7 @@
 7
 8
 9
-</pre></td><td class="rouge-code"><pre>PS C:\&gt; .\Download-File.ps1 "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
+</pre></td><td class="rouge-code"><pre>PS C:\&gt; .\Download-File.ps1 "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
 PS C:\&gt; ls c:\logo.png
 
     Directory: C:\
@@ -799,9 +799,9 @@ PS C:\&gt;
 </span><span class="cs">.DESCRIPTION</span><span class="cm">
     Download a file from internet, you must provided a valid url of the file
 </span><span class="cs">.EXAMPLE</span><span class="cm"> 
-    Download-File "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
+    Download-File "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
 </span><span class="cs">.EXAMPLE</span><span class="cm"> 
-    Download-File -Url "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
+    Download-File -Url "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
 </span><span class="cs">.PARAMETER</span><span class="cm"> Url
     The Url information for the file to download
 </span><span class="cs">.PARAMETER</span><span class="cm"> LocalFile
@@ -913,9 +913,9 @@ REMARKS
     </span><span class="cs">.DESCRIPTION</span><span class="cm">
         Download a file from internet, you must provided a valid url of the file
     </span><span class="cs">.EXAMPLE</span><span class="cm"> 
-        Download-File "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
+        Download-File "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" c:\logo.png
     </span><span class="cs">.EXAMPLE</span><span class="cm"> 
-        Download-File -Url "http://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
+        Download-File -Url "https://ss.bdimg.com/static/superman/img/logo/bd_logo1_31bdc765.png" -LocalFile c:\logo.png
     </span><span class="cs">.PARAMETER</span><span class="cm"> Url
         The Url information for the file to download
     </span><span class="cs">.PARAMETER</span><span class="cm"> LocalFile
@@ -1104,21 +1104,7 @@ https://technet.microsoft.com/en-us/library/hh360993.aspx</p>
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2014/07/vim-hand-book/">VIM 快速上手指南</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2021/12/gift-exchange/">圣诞特辑-交换礼物</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2022/04/docker-namespace/">Docker 是如何运行的</a>
+          <a href="/2020/03/sublimetext-markdeep/">给 Sublime Text 创建一个 markdeep 插件</a>
         </li>
       
         
@@ -1132,7 +1118,21 @@ https://technet.microsoft.com/en-us/library/hh360993.aspx</p>
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2021/08/csharp-async-await/">C# Async Await 探究</a>
+          <a href="/2020/04/bash-experience/">Bash 踩坑指南</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2020/11/powershell-webserver/">基于 PowerShell 的 Web Server 简单实现</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2021/05/install-php-for-nginx-on-ubuntu/">在 Ubuntu 上安装 Nginx 并支持 PHP</a>
         </li>
       
     </ul>
@@ -2363,7 +2363,7 @@ https://technet.microsoft.com/en-us/library/hh360993.aspx</p>
 
 虽然知道Python在爬虫方面是个强项，但是暂时不是很熟悉，就先用 PowerShell 勉强实现一下，直接上代码：
 
-$url = &quot;http://m.d8qu.com/104/104936/12850949.htm...</p>
+$url = &quot;https://m.d8qu.com/104/104936/12850949.ht...</p>
               </div>
             </div>
           </a>

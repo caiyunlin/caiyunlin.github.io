@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="常用前端类库整理" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="description" content="做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如： 新浪的CDN http://lib.sinaapp.com/ 百度的CDN http://cdn.code.baidu.com/" />
-<meta property="og:description" content="做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如： 新浪的CDN http://lib.sinaapp.com/ 百度的CDN http://cdn.code.baidu.com/" />
+<meta name="description" content="做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如： 新浪的CDN https://lib.sinaapp.com/ 百度的CDN https://cdn.code.baidu.com/" />
+<meta property="og:description" content="做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如： 新浪的CDN https://lib.sinaapp.com/ 百度的CDN https://cdn.code.baidu.com/" />
 <link rel="canonical" href="/2017/06/useful-frontend-library/" />
 <meta property="og:url" content="/2017/06/useful-frontend-library/" />
 <meta property="og:site_name" content="Calvin’s Blog" />
@@ -44,7 +44,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-01-01T10:57:14+08:00","datePublished":"2017-06-05T23:44:00+08:00","description":"做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如： 新浪的CDN http://lib.sinaapp.com/ 百度的CDN http://cdn.code.baidu.com/","headline":"常用前端类库整理","mainEntityOfPage":{"@type":"WebPage","@id":"/2017/06/useful-frontend-library/"},"url":"/2017/06/useful-frontend-library/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-09T11:25:02+08:00","datePublished":"2017-06-05T23:44:00+08:00","description":"做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如： 新浪的CDN https://lib.sinaapp.com/ 百度的CDN https://cdn.code.baidu.com/","headline":"常用前端类库整理","mainEntityOfPage":{"@type":"WebPage","@id":"/2017/06/useful-frontend-library/"},"url":"/2017/06/useful-frontend-library/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -616,13 +616,13 @@
 
 <time
   
-  data-ts="1641005834"
+  data-ts="1717903502"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2022/01/01
+  2024/06/09
 </time>
 
         </span>
@@ -681,8 +681,8 @@
   <div class="content">
     <p>做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如：</p>
 <ul>
-  <li>新浪的CDN http://lib.sinaapp.com/</li>
-  <li>百度的CDN http://cdn.code.baidu.com/</li>
+  <li>新浪的CDN https://lib.sinaapp.com/</li>
+  <li>百度的CDN https://cdn.code.baidu.com/</li>
 </ul>
 
 <p>但是如果我们需要部署在内网，或者需要使用一些不太常见的类库，那么这个时候公共CDN也就不好办了</p>
@@ -693,16 +693,16 @@
 
 <ol>
   <li>
-    <p>以下假设文件部署到 http://www.caiyunlin.com/public 路径下</p>
+    <p>以下假设文件部署到 https://www.caiyunlin.com/public 路径下</p>
   </li>
   <li>
-    <p>所有文件存放在public文件夹之下，这样在本地的话，类库的根路径就是 http://www.caiyunlin.com/public, 开发代码中对类库有引用则从路径 /public 开始引用即可</p>
+    <p>所有文件存放在public文件夹之下，这样在本地的话，类库的根路径就是 https://www.caiyunlin.com/public, 开发代码中对类库有引用则从路径 /public 开始引用即可</p>
   </li>
   <li>
-    <p>和公共CDN命名方式一样，类库以名称和版本分级目录存在，如：jQuery类库3.2.1版本使用下面链接, http://www.caiyunlin.com/public/jquery/3.2.1/jquery.min.js, 这样有多个版本时不会冲突</p>
+    <p>和公共CDN命名方式一样，类库以名称和版本分级目录存在，如：jQuery类库3.2.1版本使用下面链接, https://www.caiyunlin.com/public/jquery/3.2.1/jquery.min.js, 这样有多个版本时不会冲突</p>
   </li>
   <li>
-    <p>引用类库中可以包含相关的demo文件，这样可以方便参考和查错，如： http://www.caiyunlin.com/public/fullcalendar/3.2.0/demos/agenda-views.html</p>
+    <p>引用类库中可以包含相关的demo文件，这样可以方便参考和查错，如： https://www.caiyunlin.com/public/fullcalendar/3.2.0/demos/agenda-views.html</p>
   </li>
   <li>
     <p>类库文件只会按规则增加，不会删除和修改，这样方便旧版正在运行的项目</p>
@@ -844,21 +844,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2014/07/vim-hand-book/">VIM 快速上手指南</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2021/12/gift-exchange/">圣诞特辑-交换礼物</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2022/04/docker-namespace/">Docker 是如何运行的</a>
+          <a href="/2020/03/sublimetext-markdeep/">给 Sublime Text 创建一个 markdeep 插件</a>
         </li>
       
         
@@ -872,7 +858,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2021/08/csharp-async-await/">C# Async Await 探究</a>
+          <a href="/2020/04/bash-experience/">Bash 踩坑指南</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2020/11/powershell-webserver/">基于 PowerShell 的 Web Server 简单实现</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2021/05/install-php-for-nginx-on-ubuntu/">在 Ubuntu 上安装 Nginx 并支持 PHP</a>
         </li>
       
     </ul>

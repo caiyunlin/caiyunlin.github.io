@@ -44,7 +44,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-01-01T10:57:14+08:00","datePublished":"2018-05-06T17:00:00+08:00","description":"JavaScript 是一个同步的单线程执行的语言，这意味着，JS代码是从头到挨着顺序执行的，这肯定跟我们大多数多JS开发的人心里的想法不符，因为写JS需要很多异步操作，包括请求网络资源(Web)，本地文件资源(NodeJS)，甚至异步的逻辑写太多了，以至于出现回调地狱，而JS也提出了Promise, Async Await等方法来避免回调地狱。","headline":"如何在 JavaScript 中使用 Async Await","mainEntityOfPage":{"@type":"WebPage","@id":"/2018/05/javascript-async-await/"},"url":"/2018/05/javascript-async-await/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-09T11:25:02+08:00","datePublished":"2018-05-06T17:00:00+08:00","description":"JavaScript 是一个同步的单线程执行的语言，这意味着，JS代码是从头到挨着顺序执行的，这肯定跟我们大多数多JS开发的人心里的想法不符，因为写JS需要很多异步操作，包括请求网络资源(Web)，本地文件资源(NodeJS)，甚至异步的逻辑写太多了，以至于出现回调地狱，而JS也提出了Promise, Async Await等方法来避免回调地狱。","headline":"如何在 JavaScript 中使用 Async Await","mainEntityOfPage":{"@type":"WebPage","@id":"/2018/05/javascript-async-await/"},"url":"/2018/05/javascript-async-await/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -815,13 +815,13 @@
 
 <time
   
-  data-ts="1641005834"
+  data-ts="1717903502"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2022/01/01
+  2024/06/09
 </time>
 
         </span>
@@ -880,7 +880,7 @@
   <div class="content">
     <p>JavaScript 是一个同步的单线程执行的语言，这意味着，JS代码是从头到挨着顺序执行的，这肯定跟我们大多数多JS开发的人心里的想法不符，因为写JS需要很多异步操作，包括请求网络资源(Web)，本地文件资源(NodeJS)，甚至异步的逻辑写太多了，以至于出现回调地狱，而JS也提出了Promise, Async Await等方法来避免回调地狱。</p>
 
-<p><a href="http://images.caiyunlin.com/20200327113611.png" class="popup img-link  shimmer"><img src="http://images.caiyunlin.com/20200327113611.png" alt="image" loading="lazy"></a></p>
+<p><a href="https://images.caiyunlin.com/20200327113611.png" class="popup img-link  shimmer"><img src="https://images.caiyunlin.com/20200327113611.png" alt="image" loading="lazy"></a></p>
 
 <h2 id="复习javascript的回调机制"><span class="me-2">复习JavaScript的回调机制</span><a href="#复习javascript的回调机制" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>做一个小实验，如果你的浏览器是Chrome内核的，可以直接按F12打开<code class="language-plaintext highlighter-rouge">开发者工具</code>，首先执行一下需要的辅助函数</p>
@@ -921,7 +921,7 @@
 
 <p>下图可以说明这个运行机制，至始自终只有一个主线程在不停的轮询</p>
 
-<p><a href="http://images.caiyunlin.com/20200327122132.png" class="popup img-link  shimmer"><img src="http://images.caiyunlin.com/20200327122132.png" alt="image" loading="lazy"></a></p>
+<p><a href="https://images.caiyunlin.com/20200327122132.png" class="popup img-link  shimmer"><img src="https://images.caiyunlin.com/20200327122132.png" alt="image" loading="lazy"></a></p>
 
 <p>我们再用一段代码来测试一下</p>
 
@@ -967,7 +967,7 @@
 
 <p>观察结果，我们发现<code class="language-plaintext highlighter-rouge">great</code>并不是在2秒之后输出的，而是在5秒之后，那是因为，主线程在sleep里面循环了5秒钟之后才有机会去检查回调队列里面的事件，才有机会执行 <code class="language-plaintext highlighter-rouge">write_log("great")</code> 这句脚本。</p>
 
-<p><a href="http://images.caiyunlin.com/20200327032516.png" class="popup img-link  shimmer"><img src="http://images.caiyunlin.com/20200327032516.png" alt="image" loading="lazy"></a></p>
+<p><a href="https://images.caiyunlin.com/20200327032516.png" class="popup img-link  shimmer"><img src="https://images.caiyunlin.com/20200327032516.png" alt="image" loading="lazy"></a></p>
 
 <h2 id="回调地狱的由来"><span class="me-2">回调地狱的由来</span><a href="#回调地狱的由来" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
@@ -1109,21 +1109,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2014/07/vim-hand-book/">VIM 快速上手指南</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2021/12/gift-exchange/">圣诞特辑-交换礼物</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2022/04/docker-namespace/">Docker 是如何运行的</a>
+          <a href="/2020/03/sublimetext-markdeep/">给 Sublime Text 创建一个 markdeep 插件</a>
         </li>
       
         
@@ -1137,7 +1123,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2021/08/csharp-async-await/">C# Async Await 探究</a>
+          <a href="/2020/04/bash-experience/">Bash 踩坑指南</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2020/11/powershell-webserver/">基于 PowerShell 的 Web Server 简单实现</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2021/05/install-php-for-nginx-on-ubuntu/">在 Ubuntu 上安装 Nginx 并支持 PHP</a>
         </li>
       
     </ul>
@@ -2296,13 +2296,13 @@
               <div class="text-muted">
                 <p>做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如：
 
-  新浪的CDN http://lib.sinaapp.com/
-  百度的CDN http://cdn.code.baidu.com/
+  新浪的CDN https://lib.sinaapp.com/
+  百度的CDN https://cdn.code.baidu.com/
 
 
 但是如果我们需要部署在内网，或者需要使用一些不太常见的类库，那么这个时候公共CDN也就不好办了
 
-这里提供一个思路，我们可以创建一个自己的静态公共库方便重复使用...</p>
+这里提供一个思路，我们可以创建一个自己的静态公共库方便重复...</p>
               </div>
             </div>
           </a>

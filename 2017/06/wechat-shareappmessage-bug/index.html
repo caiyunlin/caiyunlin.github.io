@@ -44,7 +44,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-01-01T08:48:42+08:00","datePublished":"2017-06-28T15:33:00+08:00","description":"使用微信的JSSDK，可以在转发图文给朋友或者转发到朋友圈的时候，对转发的标题，描述以及图片进行自定义，这是个很好的功能，然而最近测试的时候发现一个Bug，当转发的链接是OAuth链接的时候，这段定义就失效了。","headline":"微信使用 JSSDK 分享 OAuth 链接的问题","mainEntityOfPage":{"@type":"WebPage","@id":"/2017/06/wechat-shareappmessage-bug/"},"url":"/2017/06/wechat-shareappmessage-bug/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-09T11:25:02+08:00","datePublished":"2017-06-28T15:33:00+08:00","description":"使用微信的JSSDK，可以在转发图文给朋友或者转发到朋友圈的时候，对转发的标题，描述以及图片进行自定义，这是个很好的功能，然而最近测试的时候发现一个Bug，当转发的链接是OAuth链接的时候，这段定义就失效了。","headline":"微信使用 JSSDK 分享 OAuth 链接的问题","mainEntityOfPage":{"@type":"WebPage","@id":"/2017/06/wechat-shareappmessage-bug/"},"url":"/2017/06/wechat-shareappmessage-bug/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -692,13 +692,13 @@
 
 <time
   
-  data-ts="1640998122"
+  data-ts="1717903502"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2022/01/01
+  2024/06/09
 </time>
 
         </span>
@@ -798,13 +798,13 @@
 <span class="p">});</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>上面的代码中，注意link的描述，”该链接域名或路径必须与当前页面对应的公众号JS安全域名一致”，就是说你转发的链接必须与你公众号的JS安全域名一致，因为安全问题，这个设置无可厚非。 你不能自己的图文在 http://www.mydomain.com 而分享其他链接如 http://www.baidu.com， 当你这么设置的时候，这段分享自定义的脚本就全部失效。</p>
+<p>上面的代码中，注意link的描述，”该链接域名或路径必须与当前页面对应的公众号JS安全域名一致”，就是说你转发的链接必须与你公众号的JS安全域名一致，因为安全问题，这个设置无可厚非。 你不能自己的图文在 https://www.mydomain.com 而分享其他链接如 https://www.baidu.com， 当你这么设置的时候，这段分享自定义的脚本就全部失效。</p>
 
-<p>现在问题来了，如果我想使用微信自己的OAuth链接进行分享的话，也会失效，虽然是他自家的域名，微信同样认为这个链接和JS安全域名不一致，而如果直接分享 http://www.mydomain.com/xxx 的链接时，是无法从微信里得知用户信息的。</p>
+<p>现在问题来了，如果我想使用微信自己的OAuth链接进行分享的话，也会失效，虽然是他自家的域名，微信同样认为这个链接和JS安全域名不一致，而如果直接分享 https://www.mydomain.com/xxx 的链接时，是无法从微信里得知用户信息的。</p>
 
 <p>JS安全域名是可以在公众号管理后台设置的，但是无法把open.weixin.qq.com或者qq.com设置为JS安全域名的。</p>
 
-<p><a href="http://www.caiyunlin.com/img/wechat-js-domain.png" class="popup img-link  shimmer"><img src="http://www.caiyunlin.com/img/wechat-js-domain.png" loading="lazy"></a></p>
+<p><a href="https://www.caiyunlin.com/img/wechat-js-domain.png" class="popup img-link  shimmer"><img src="https://www.caiyunlin.com/img/wechat-js-domain.png" loading="lazy"></a></p>
 
 <p>看起来似乎是无解了</p>
 
@@ -812,7 +812,7 @@
 
 <p>经过思考，归纳一下问题就是在于两点</p>
 <ol>
-  <li>JSSDK只能转发同域名下的链接 http://www.mydomain.com</li>
+  <li>JSSDK只能转发同域名下的链接 https://www.mydomain.com</li>
   <li>必须使用 https://open.weixin.qq.com 开头的OAuth链接才能识别微信用户的身份</li>
 </ol>
 
@@ -825,7 +825,7 @@
 4
 </pre></td><td class="rouge-code"><pre>$oauth_url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;state=STATE#wechat_redirect";
 $encoded_url = base64_encode($oauth_url);
-$new_url = "http://www.mydomain.com/jump?url="+encoded_url;
+$new_url = "https://www.mydomain.com/jump?url="+encoded_url;
 此处 $new_url 代替之前的转发url，他的域名是符合JSSDK安全域名定义的
 </pre></td></tr></tbody></table></code></div></div>
 <p>Jump里的处理规则就是解码以及后台跳转，伪代码如下</p>
@@ -843,7 +843,7 @@ header("location: ".$url);
 
 <h2 id="2019-02-27-补充"><span class="me-2">2019-02-27 补充</span><a href="#2019-02-27-补充" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>这个问题不是微信的bug，其实转发的时候可以直接转发自己域名下的地址，比如 http://www.mydomain.com/share/news/123 然后，在这个具体的页面里面，如果需要OAuth，进行二次跳转，而不是必须一开始就拼接OAuth的地址，这个问题是开始钻了牛角尖了。。。</p>
+<p>这个问题不是微信的bug，其实转发的时候可以直接转发自己域名下的地址，比如 https://www.mydomain.com/share/news/123 然后，在这个具体的页面里面，如果需要OAuth，进行二次跳转，而不是必须一开始就拼接OAuth的地址，这个问题是开始钻了牛角尖了。。。</p>
 
 <p>【全文完】</p>
 
@@ -962,21 +962,7 @@ header("location: ".$url);
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2014/07/vim-hand-book/">VIM 快速上手指南</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2021/12/gift-exchange/">圣诞特辑-交换礼物</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/2022/04/docker-namespace/">Docker 是如何运行的</a>
+          <a href="/2020/03/sublimetext-markdeep/">给 Sublime Text 创建一个 markdeep 插件</a>
         </li>
       
         
@@ -990,7 +976,21 @@ header("location: ".$url);
         
         
         <li class="text-truncate lh-lg">
-          <a href="/2021/08/csharp-async-await/">C# Async Await 探究</a>
+          <a href="/2020/04/bash-experience/">Bash 踩坑指南</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2020/11/powershell-webserver/">基于 PowerShell 的 Web Server 简单实现</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/2021/05/install-php-for-nginx-on-ubuntu/">在 Ubuntu 上安装 Nginx 并支持 PHP</a>
         </li>
       
     </ul>
@@ -2149,13 +2149,13 @@ header("location: ".$url);
               <div class="text-muted">
                 <p>做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如：
 
-  新浪的CDN http://lib.sinaapp.com/
-  百度的CDN http://cdn.code.baidu.com/
+  新浪的CDN https://lib.sinaapp.com/
+  百度的CDN https://cdn.code.baidu.com/
 
 
 但是如果我们需要部署在内网，或者需要使用一些不太常见的类库，那么这个时候公共CDN也就不好办了
 
-这里提供一个思路，我们可以创建一个自己的静态公共库方便重复使用...</p>
+这里提供一个思路，我们可以创建一个自己的静态公共库方便重复...</p>
               </div>
             </div>
           </a>
