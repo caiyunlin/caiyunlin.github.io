@@ -29,7 +29,7 @@
     
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Docker 使用整理" />
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="Docker 简介 Docker 属于 Linux 容器的一种封装，提供简单易用的容器使用接口。 我们需要将 Docker 和 虚拟机区分一下，虚拟机是模拟了整套的操作系统环境，可以在操作系统里面运行另外一个操作系统。 而 Docker 并没有模拟完整的操作系统，而是对进程进行隔离。 或者说，在正常的进程外面套了一个保护层，对于容器里面的进程来说，他接触到的各种资源都是虚拟，从而实现了于底层系统的隔离。 因为 Docker 容器是进程级别的，相比于虚拟机，启动快，占用资源少。" />
@@ -223,7 +223,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
     <header class="profile-wrapper">
-      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
   
       <h1 class="site-title">
         <a href="/">Calvin's Blog</a>
@@ -2496,6 +2496,10 @@ Shell的种类
       initTheme = darkTheme;
     }
 
+    let lang = 'zh-CN';if (lang.length > 2 && !lang.startsWith('zh')) {
+      lang = lang.slice(0, 2);
+    }
+
     let giscusAttributes = {
       src: 'https://giscus.app/client.js',
       'data-repo': 'caiyunlin/caiyunlin.github.io',
@@ -2508,7 +2512,7 @@ Shell的种类
       'data-emit-metadata': '0',
       'data-theme': initTheme,
       'data-input-position': 'bottom',
-      'data-lang': 'zh-CN',
+      'data-lang': lang,
       'data-loading': 'lazy',
       crossorigin: 'anonymous',
       async: ''
@@ -2573,7 +2577,7 @@ Shell的种类
   <p>本站采用 <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> 主题 <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.0.1"
+        title="v7.1.1"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3358,8 +3362,6 @@ Shell的种类
 <!-- layout specified -->
 
 
-
-
   
 
   
@@ -3416,6 +3418,7 @@ Shell的种类
   
     <script src="/assets/lib/tocbot/tocbot.min.js"></script>
   
+
 
 
 

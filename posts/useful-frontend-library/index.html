@@ -29,7 +29,7 @@
     
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="常用前端类库整理" />
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="做前端开发免不了要使用一些静态公共库，如果代码部署在互联网上面，我们可以使用CDN，如： 新浪的CDN https://lib.sinaapp.com/ 百度的CDN https://cdn.code.baidu.com/" />
@@ -223,7 +223,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
     <header class="profile-wrapper">
-      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
   
       <h1 class="site-title">
         <a href="/">Calvin's Blog</a>
@@ -2170,6 +2170,10 @@ fun...</p>
       initTheme = darkTheme;
     }
 
+    let lang = 'zh-CN';if (lang.length > 2 && !lang.startsWith('zh')) {
+      lang = lang.slice(0, 2);
+    }
+
     let giscusAttributes = {
       src: 'https://giscus.app/client.js',
       'data-repo': 'caiyunlin/caiyunlin.github.io',
@@ -2182,7 +2186,7 @@ fun...</p>
       'data-emit-metadata': '0',
       'data-theme': initTheme,
       'data-input-position': 'bottom',
-      'data-lang': 'zh-CN',
+      'data-lang': lang,
       'data-loading': 'lazy',
       crossorigin: 'anonymous',
       async: ''
@@ -2247,7 +2251,7 @@ fun...</p>
   <p>本站采用 <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> 主题 <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.0.1"
+        title="v7.1.1"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3032,8 +3036,6 @@ fun...</p>
 <!-- layout specified -->
 
 
-
-
   
 
   
@@ -3090,6 +3092,7 @@ fun...</p>
   
     <script src="/assets/lib/tocbot/tocbot.min.js"></script>
   
+
 
 
 

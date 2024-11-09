@@ -29,7 +29,7 @@
     
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Javascript 对象继承" />
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="Javascript 没有直接的对象继承，可以通过原型继承的方式来实现，下面是一种实现方法。 定义父类 将方法写到原型（prototype)上 ```javascript function Person(name, age) { this.name = name; this.age = age; };" />
@@ -223,7 +223,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
     <header class="profile-wrapper">
-      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
   
       <h1 class="site-title">
         <a href="/">Calvin's Blog</a>
@@ -2218,6 +2218,10 @@ fun...</p>
       initTheme = darkTheme;
     }
 
+    let lang = 'zh-CN';if (lang.length > 2 && !lang.startsWith('zh')) {
+      lang = lang.slice(0, 2);
+    }
+
     let giscusAttributes = {
       src: 'https://giscus.app/client.js',
       'data-repo': 'caiyunlin/caiyunlin.github.io',
@@ -2230,7 +2234,7 @@ fun...</p>
       'data-emit-metadata': '0',
       'data-theme': initTheme,
       'data-input-position': 'bottom',
-      'data-lang': 'zh-CN',
+      'data-lang': lang,
       'data-loading': 'lazy',
       crossorigin: 'anonymous',
       async: ''
@@ -2295,7 +2299,7 @@ fun...</p>
   <p>本站采用 <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> 主题 <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.0.1"
+        title="v7.1.1"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3080,8 +3084,6 @@ fun...</p>
 <!-- layout specified -->
 
 
-
-
   
 
   
@@ -3138,6 +3140,7 @@ fun...</p>
   
     <script src="/assets/lib/tocbot/tocbot.min.js"></script>
   
+
 
 
 

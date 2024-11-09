@@ -29,7 +29,7 @@
     
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Sublime Text 使用小结" />
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="Sublime Text 简介 Sublime Text 是一个轻量、简洁、高效、跨平台的编辑器。 它启动速度快，颜值高，对各类变成语言都有很好的支持。" />
@@ -223,7 +223,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
     <header class="profile-wrapper">
-      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
   
       <h1 class="site-title">
         <a href="/">Calvin's Blog</a>
@@ -2374,6 +2374,10 @@ markdeep 是一个轻巧的markdown解析器，只需要一行代码就可以直
       initTheme = darkTheme;
     }
 
+    let lang = 'zh-CN';if (lang.length > 2 && !lang.startsWith('zh')) {
+      lang = lang.slice(0, 2);
+    }
+
     let giscusAttributes = {
       src: 'https://giscus.app/client.js',
       'data-repo': 'caiyunlin/caiyunlin.github.io',
@@ -2386,7 +2390,7 @@ markdeep 是一个轻巧的markdown解析器，只需要一行代码就可以直
       'data-emit-metadata': '0',
       'data-theme': initTheme,
       'data-input-position': 'bottom',
-      'data-lang': 'zh-CN',
+      'data-lang': lang,
       'data-loading': 'lazy',
       crossorigin: 'anonymous',
       async: ''
@@ -2451,7 +2455,7 @@ markdeep 是一个轻巧的markdown解析器，只需要一行代码就可以直
   <p>本站采用 <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> 主题 <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.0.1"
+        title="v7.1.1"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3236,8 +3240,6 @@ markdeep 是一个轻巧的markdown解析器，只需要一行代码就可以直
 <!-- layout specified -->
 
 
-
-
   
 
   
@@ -3294,6 +3296,7 @@ markdeep 是一个轻巧的markdown解析器，只需要一行代码就可以直
   
     <script src="/assets/lib/tocbot/tocbot.min.js"></script>
   
+
 
 
 

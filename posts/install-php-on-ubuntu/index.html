@@ -29,7 +29,7 @@
     
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="在 Ubuntu 上安装配置 PHP 环境" />
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="原有的服务器快到期了，趁活动搞了个阿里云的Ubuntu主机，所以将一些测试的php代码移到这台主机下，下面记录一下在阿里云的Ubuntu上安装php环境的步骤。" />
@@ -223,7 +223,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
     <header class="profile-wrapper">
-      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
   
       <h1 class="site-title">
         <a href="/">Calvin's Blog</a>
@@ -2654,6 +2654,10 @@ sudo apt-get ...</p>
       initTheme = darkTheme;
     }
 
+    let lang = 'zh-CN';if (lang.length > 2 && !lang.startsWith('zh')) {
+      lang = lang.slice(0, 2);
+    }
+
     let giscusAttributes = {
       src: 'https://giscus.app/client.js',
       'data-repo': 'caiyunlin/caiyunlin.github.io',
@@ -2666,7 +2670,7 @@ sudo apt-get ...</p>
       'data-emit-metadata': '0',
       'data-theme': initTheme,
       'data-input-position': 'bottom',
-      'data-lang': 'zh-CN',
+      'data-lang': lang,
       'data-loading': 'lazy',
       crossorigin: 'anonymous',
       async: ''
@@ -2731,7 +2735,7 @@ sudo apt-get ...</p>
   <p>本站采用 <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> 主题 <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.0.1"
+        title="v7.1.1"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3516,8 +3520,6 @@ sudo apt-get ...</p>
 <!-- layout specified -->
 
 
-
-
   
 
   
@@ -3574,6 +3576,7 @@ sudo apt-get ...</p>
   
     <script src="/assets/lib/tocbot/tocbot.min.js"></script>
   
+
 
 
 

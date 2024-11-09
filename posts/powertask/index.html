@@ -29,7 +29,7 @@
     
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="在线的PowerShell类库 - PowerTask" />
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="在公司的项目中，写了大量的PowerShell脚本去安装软件和部署新的Release，偶尔也会分享PowerShell脚本给其他Team的同事。 闲暇之余，研究了一下，发现只要打开权限，PowerShell也有远程下载执行脚本并且执行的功能，遂产生一个念头，如果将通用的PowerShell脚本封装成在线的功能库，然后本地只用一行脚本载入一下，这样不是能很好的复用了吗？ 而且可以实时载入最新的版本，那不是很快活。" />
@@ -223,7 +223,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
     <header class="profile-wrapper">
-      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+      <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
   
       <h1 class="site-title">
         <a href="/">Calvin's Blog</a>
@@ -2349,6 +2349,10 @@ $url = &quot;https://m.d8qu.com/104/104936/12850949.ht...</p>
       initTheme = darkTheme;
     }
 
+    let lang = 'zh-CN';if (lang.length > 2 && !lang.startsWith('zh')) {
+      lang = lang.slice(0, 2);
+    }
+
     let giscusAttributes = {
       src: 'https://giscus.app/client.js',
       'data-repo': 'caiyunlin/caiyunlin.github.io',
@@ -2361,7 +2365,7 @@ $url = &quot;https://m.d8qu.com/104/104936/12850949.ht...</p>
       'data-emit-metadata': '0',
       'data-theme': initTheme,
       'data-input-position': 'bottom',
-      'data-lang': 'zh-CN',
+      'data-lang': lang,
       'data-loading': 'lazy',
       crossorigin: 'anonymous',
       async: ''
@@ -2426,7 +2430,7 @@ $url = &quot;https://m.d8qu.com/104/104936/12850949.ht...</p>
   <p>本站采用 <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> 主题 <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.0.1"
+        title="v7.1.1"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3211,8 +3215,6 @@ $url = &quot;https://m.d8qu.com/104/104936/12850949.ht...</p>
 <!-- layout specified -->
 
 
-
-
   
 
   
@@ -3269,6 +3271,7 @@ $url = &quot;https://m.d8qu.com/104/104936/12850949.ht...</p>
   
     <script src="/assets/lib/tocbot/tocbot.min.js"></script>
   
+
 
 
 
