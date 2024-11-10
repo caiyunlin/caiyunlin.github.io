@@ -30,25 +30,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="C# Async Await 探究" />
+<meta property="og:title" content="Python 使用整理" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="description" content="这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?" />
-<meta property="og:description" content="这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?" />
-<link rel="canonical" href="/posts/csharp-async-await/" />
-<meta property="og:url" content="/posts/csharp-async-await/" />
+<meta name="description" content="Python 启动http服务器" />
+<meta property="og:description" content="Python 启动http服务器" />
+<link rel="canonical" href="/posts/python-experience/" />
+<meta property="og:url" content="/posts/python-experience/" />
 <meta property="og:site_name" content="Calvin’s Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-12T15:14:00+08:00" />
+<meta property="article:published_time" content="2023-04-16T08:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="C# Async Await 探究" />
+<meta property="twitter:title" content="Python 使用整理" />
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-10T08:10:33+08:00","datePublished":"2021-08-12T15:14:00+08:00","description":"这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?","headline":"C# Async Await 探究","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/csharp-async-await/"},"url":"/posts/csharp-async-await/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-16T08:00:00+08:00","datePublished":"2023-04-16T08:00:00+08:00","description":"Python 启动http服务器","headline":"Python 使用整理","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/python-experience/"},"url":"/posts/python-experience/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
-    <title>C# Async Await 探究 | Calvin's Blog
+    <title>Python 使用整理 | Calvin's Blog
     </title>
   
     <!--
@@ -410,7 +410,7 @@
         
           
             
-              <span>C# Async Await 探究</span>
+              <span>Python 使用整理</span>
             
 
           
@@ -478,79 +478,6 @@
 
 
 
-  
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
 
 <!-- Add header for code snippets -->
 
@@ -566,6 +493,11 @@
   
 
   
+
+  
+  
+
+  
     
     
 
@@ -606,13 +538,85 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
-  
-
-  
-  
-
   
 
   
@@ -635,7 +639,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>C# Async Await 探究</h1>
+    <h1 data-toc-skip>Python 使用整理</h1>
     
 
     <div class="post-meta text-muted">
@@ -652,41 +656,18 @@
 
 <time
   
-  data-ts="1628752440"
+  data-ts="1681603200"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2021/08/12
+  2023/04/16
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          更新于
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1731197433"
-  data-df="YYYY/MM/DD"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  2024/11/10
-</time>
-
-        </span>
       
 
       
@@ -730,9 +711,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2351 字"
+  title="1107 字"
 >
-  <em>13 分钟</em>阅读</span>
+  <em>6 分钟</em>阅读</span>
 
         </div>
       </div>
@@ -740,24 +721,176 @@
   </header>
 
   <div class="content">
-    <p>这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?</p>
+    <h3 id="python-启动http服务器"><span class="me-2">Python 启动http服务器</span><a href="#python-启动http服务器" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>当时直观的感觉是会创建，觉得 async await 只是语法糖，当前线程没有被 block，而后台肯定需要做事，所以必然会创建新的线程去执行任务才对。</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="c"># Python3</span>
+python <span class="nt">-m</span> http.server <span class="nt">-cgi</span> 8080
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>然而查了文档，发现官方文档明确说明： <code class="language-plaintext highlighter-rouge">async</code> 和 <code class="language-plaintext highlighter-rouge">await</code> 关键字不会创建其他线程。 因为异步方法不会在其自身线程上运行，因此它不需要多线程。</p>
+<h3 id="python-取环境变量"><span class="me-2">Python 取环境变量</span><a href="#python-取环境变量" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>参考：https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#threads</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">os</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">[</span><span class="sh">'</span><span class="s">YOURENVNAME</span><span class="sh">'</span><span class="p">])</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>如果没有创建线程，到底谁在后台执行任务呢？带着这个问题，好好捋一下 async await 这个新特性。</p>
+<h3 id="python-function定义"><span class="me-2">Python Function定义</span><a href="#python-function定义" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<h2 id="子线程"><span class="me-2">子线程</span><a href="#子线程" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>在没有 async 和 await 关键字的时候，如果我们需要在后台执行一些耗时任务时，就可以开启新的线程来完成。
-现在我们模拟一个耗时任务 doWord 函数，该函数完成一个加法并返回结果，为了模拟耗时，加入了 ms 参数用来 Sleep 模拟耗时。</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">my_func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>具体测试代码如下，我们在主线程中开启了两个子线程来执行两个耗时的任务，执行完成后输出得到的结果。</p>
+<h3 id="python-时间戳"><span class="me-2">Python 时间戳</span><a href="#python-时间戳" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<div class="language-csharp highlighter-rouge"><div class="code-header">
-        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">time</span>
+<span class="n">now</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">round</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="nf">time</span><span class="p">()</span><span class="o">*</span><span class="mi">1000</span><span class="p">))</span>
+<span class="n">now02</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="nf">strftime</span><span class="p">(</span><span class="sh">'</span><span class="s">%Y-%m-%d %H:%M:%S</span><span class="sh">'</span><span class="p">,</span><span class="n">time</span><span class="p">.</span><span class="nf">localtime</span><span class="p">(</span><span class="n">now</span><span class="o">/</span><span class="mi">1000</span><span class="p">))</span>
+<span class="n">now02</span>
+<span class="c1"># Use below
+</span><span class="n">now</span> <span class="o">=</span>  <span class="n">time</span><span class="p">.</span><span class="nf">strftime</span><span class="p">(</span><span class="sh">'</span><span class="s">%Y-%m-%d %H:%M:%S</span><span class="sh">'</span><span class="p">,</span><span class="n">time</span><span class="p">.</span><span class="nf">localtime</span><span class="p">())</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="python-获取网页信息"><span class="me-2">Python 获取网页信息</span><a href="#python-获取网页信息" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">get_html</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">req</span><span class="p">.</span><span class="n">encoding</span><span class="o">=</span><span class="sh">"</span><span class="s">utf-8</span><span class="sh">"</span> <span class="c1">#设置编码，否则有可能会乱码
+</span>    <span class="k">return</span> <span class="n">req</span><span class="p">.</span><span class="n">text</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="python-使用正则表达式"><span class="me-2">Python 使用正则表达式</span><a href="#python-使用正则表达式" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">re</span>
+<span class="n">regex</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="nf">compile</span><span class="p">(</span><span class="sh">'</span><span class="s">&lt;dt class=</span><span class="se">\"</span><span class="s">preview-item</span><span class="se">\"</span><span class="s">&gt;&lt;a href=</span><span class="se">\"</span><span class="s">(.*?)</span><span class="se">\"</span><span class="s"> title=</span><span class="se">\"</span><span class="s">(.*?)</span><span class="se">\"</span><span class="s"> .*?&gt;</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">matches</span> <span class="o">=</span> <span class="n">regex</span><span class="p">.</span><span class="nf">finditer</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">match</span><span class="p">.</span><span class="nf">group</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">match</span><span class="p">.</span><span class="nf">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="数据库sqlite3使用时中文编码问题"><span class="me-2">数据库SQLite3使用时中文编码问题</span><a href="#数据库sqlite3使用时中文编码问题" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>一、具体问题
+读取十万多条文本写入SQLite类型数据库，由于文本中存在中文字符，插入到数据库没错，取出时一直是Unicode Decode Error，导致折腾了很长时间。
+二、解决方法
+Python连接数据时进行如下设置：</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">db</span><span class="o">=</span><span class="n">sqlite3</span><span class="p">.</span><span class="nf">connection</span><span class="p">(</span><span class="sh">"</span><span class="s">...</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">db</span><span class="p">.</span><span class="n">text_factory</span><span class="o">=</span><span class="nb">str</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>另为了python代码中硬编码的中文字符串不出现问题，除了在源码开始添加</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="c1"># -*- coding:utf-8 -*-  
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>设置python源码的编码为utf-8</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">sys</span>
+<span class="nf">reload</span><span class="p">(</span><span class="n">sys</span><span class="p">)</span>
+<span class="n">sys</span><span class="p">.</span><span class="nf">setdefaultencode</span><span class="p">(</span><span class="sh">'</span><span class="s">utf8</span><span class="sh">'</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="安装机器学习库sklearn出错"><span class="me-2">安装机器学习库Sklearn出错</span><a href="#安装机器学习库sklearn出错" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>一、具体问题
+使用pip或easy_install时一直出错，如can not import murmurhash3_32。</p>
+
+<p>二、解决方法
+下载后进行本地安装。
+1 首先需要安装Cython，网上下载后进行本地安装 python setup.py install；
+2 <a href="https://pypi.python.org/pypi/scikit-learn/0.14.1">下载Sklearn</a>包，进行本地安装；
+3 安装后用nosetests -v sklearn来测试安装。</p>
+
+<h3 id="改变python输出流的编码方式"><span class="me-2">改变Python输出流的编码方式</span><a href="#改变python输出流的编码方式" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>一、改变文件输出流编码方式</p>
+
+<p>最近玩BeautifulSoup，遇到了这样的问题： BeautifulSoup默认把 转换成’\xa0’了，结果gbk就没法输出了，因为这个玩意转换不到gbk，但我系统的文件输出编码方式默认就是gbk，所以需要改变文件的编码方式。</p>
+
+<p>1 对于python 2.4以前的版本可以f=open(‘out.html’,’w’,’utf-8’)这样实现。
+2 对于以后的版本，可以使用codecs类</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">f</span><span class="o">=</span><span class="n">code</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">out.html</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">w</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">utf-8</span><span class="sh">'</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>然后就可以print »f,data或者f.write(data)来编码文件流了。</p>
+
+<p>二、改变标准输出流的编码方式的方法</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">codecs</span><span class="p">,</span> <span class="n">sys</span>
+<span class="n">old</span><span class="o">=</span><span class="n">sys</span><span class="p">.</span><span class="n">stdout</span>
+<span class="n">sys</span><span class="p">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">codecs</span><span class="p">.</span><span class="nf">lookup</span><span class="p">(</span><span class="sh">'</span><span class="s">iso8859-1</span><span class="sh">'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">](</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdout</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="python和cc进行混编"><span class="me-2">Python和C，C++进行混编</span><a href="#python和cc进行混编" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>一、Python利用Boost库来调用C，C++</p>
+
+<p>不使用boost.python库来直接构建dll的话比较繁琐，下面实例是借助boost库实现python对C、C++的调用。</p>
+
+<p>1 首先确定已经安装python和boost库，本例测试环境是python2.7，boost_1_54_0 ，在vs平台下实现；</p>
+
+<p>2 vs建立dll工程，配置上boost库的环境，记得包括python的依赖库：E:\Python27\include和E:\Python27\libs；</p>
+
+<p>3 编写代码</p>
+
+<p>下面是一个示例：</p>
+
+<div class="language-c highlighter-rouge"><div class="code-header">
+        <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -774,211 +907,74 @@
 14
 15
 16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-</pre></td><td class="rouge-code"><pre>    <span class="k">class</span> <span class="nc">Program</span>
-    <span class="p">{</span>
-        <span class="k">static</span> <span class="k">void</span> <span class="nf">Print</span><span class="p">(</span><span class="kt">string</span> <span class="n">message</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">string</span> <span class="n">now</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="nf">ToString</span><span class="p">(</span><span class="s">"HH:mm:ss.fff"</span><span class="p">);</span>
-            <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">$"</span><span class="p">{</span><span class="n">now</span><span class="p">}</span><span class="s"> </span><span class="p">{</span><span class="n">message</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-        <span class="p">}</span>
+</pre></td><td class="rouge-code"><pre><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="c1">  </span><span class="cp">
+#include</span> <span class="cpf">&lt;boost/python.hpp&gt;</span><span class="c1">  </span><span class="cp">
+</span><span class="n">using</span> <span class="n">namespace</span> <span class="n">boost</span><span class="o">::</span><span class="n">python</span><span class="p">;</span>  
 
-        <span class="k">static</span> <span class="kt">int</span> <span class="nf">doWork</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="n">ms</span> <span class="p">=</span> <span class="m">1000</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">threadId</span> <span class="p">=</span> <span class="n">Thread</span><span class="p">.</span><span class="n">CurrentThread</span><span class="p">.</span><span class="n">ManagedThreadId</span><span class="p">;</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"Current Thread ID is : </span><span class="p">{</span><span class="n">threadId</span><span class="p">}</span><span class="s"> "</span><span class="p">);</span>
-            <span class="n">Thread</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="n">ms</span><span class="p">);</span>
-            <span class="kt">int</span> <span class="n">result</span> <span class="p">=</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"Thread #</span><span class="p">{</span><span class="n">threadId</span><span class="p">}</span><span class="s"> doWork:</span><span class="p">{</span><span class="n">a</span><span class="p">}</span><span class="s"> + </span><span class="p">{</span><span class="n">b</span><span class="p">}</span><span class="s"> = </span><span class="p">{</span><span class="n">result</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-            <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
-        <span class="p">}</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">strtmp</span><span class="p">;</span>  
+<span class="kt">char</span> <span class="k">const</span><span class="o">*</span> <span class="nf">Recognise</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">url</span><span class="p">)</span>  
+<span class="p">{</span>  
+    <span class="n">strtmp</span><span class="o">=</span><span class="s">"get data from dll..."</span><span class="p">;</span>  
+    <span class="n">strtmp</span><span class="o">+=</span><span class="n">url</span><span class="p">;</span>  
+    <span class="k">return</span> <span class="n">strtmp</span><span class="p">.</span><span class="n">c_str</span><span class="p">();</span>  
+<span class="p">}</span>  
 
-        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"====Main Thread Start===="</span><span class="p">);</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"Main Thread ID is : </span><span class="p">{</span><span class="n">Thread</span><span class="p">.</span><span class="n">CurrentThread</span><span class="p">.</span><span class="n">ManagedThreadId</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-            <span class="nf">ThreadTest</span><span class="p">();</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"====Main Thread End===="</span><span class="p">);</span>
-            <span class="n">Console</span><span class="p">.</span><span class="nf">ReadKey</span><span class="p">();</span>
-        <span class="p">}</span>
-
-        <span class="k">static</span> <span class="k">void</span> <span class="nf">ThreadTest</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">result1</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-            <span class="kt">int</span> <span class="n">result2</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-
-            <span class="n">Thread</span> <span class="n">thread1</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Thread</span><span class="p">(()</span> <span class="p">=&gt;</span>
-            <span class="p">{</span>
-                <span class="n">result1</span> <span class="p">=</span> <span class="nf">doWork</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">2000</span><span class="p">);</span>
-                <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 1 Completed! "</span><span class="p">);</span>
-            <span class="p">});</span>
-
-            <span class="n">Thread</span> <span class="n">thread2</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Thread</span><span class="p">(()</span> <span class="p">=&gt;</span>
-            <span class="p">{</span>
-                <span class="n">result2</span> <span class="p">=</span> <span class="nf">doWork</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">1000</span><span class="p">);</span>
-                <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 2 Completed! "</span><span class="p">);</span>
-            <span class="p">});</span>
-
-            <span class="n">thread1</span><span class="p">.</span><span class="nf">Start</span><span class="p">();</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 1 Started! "</span><span class="p">);</span>
-
-            <span class="n">thread2</span><span class="p">.</span><span class="nf">Start</span><span class="p">();</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 2 Started! "</span><span class="p">);</span>
-
-            <span class="c1">//wait thread to complete</span>
-            <span class="n">thread1</span><span class="p">.</span><span class="nf">Join</span><span class="p">();</span>
-            <span class="n">thread2</span><span class="p">.</span><span class="nf">Join</span><span class="p">();</span>
-
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"result1 = </span><span class="p">{</span><span class="n">result1</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"result2 = </span><span class="p">{</span><span class="n">result2</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-        <span class="p">}</span>
-
-    <span class="p">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>输出如下，为了方便表示执行的线程，我们 doWork 任务里面打印了”线程号”</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre>18:15:19.688 ====Main Thread Start====
-18:15:19.690 Main Thread ID is : 1
-18:15:19.691 Thread 1 Started!
-18:15:19.692 Thread 2 Started!
-18:15:19.694 Current Thread ID is : 3
-18:15:19.694 Current Thread ID is : 4
-18:15:20.709 Thread #4 doWork:2 + 2 = 4
-18:15:20.709 Thread 2 Completed!
-18:15:21.699 Thread #3 doWork:1 + 1 = 2
-18:15:21.699 Thread 1 Completed!
-18:15:21.704 result1 = 2
-18:15:21.704 result2 = 4
-18:15:21.704 ====Main Thread End====
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>我们可以看到主线程调用 ThreadTest 函数，创建了2个子线程，其中子线程1 耗时2秒，线程2耗时1秒，所以线程2先完成了。
-最后 thread1.Join() 和 thread2.Join() 用于阻塞等待两个线程，直到他们都执行完毕。</p>
-
-<p>这里需要注意，一定要 thread1.Join() 和 thread2.Join()，如果注释掉这两句，则返回结果如下</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre>18:15:39.162 ====Main Thread Start====
-18:15:39.164 Main Thread ID is : 1
-18:15:39.165 Thread 1 Started!
-18:15:39.166 Thread 2 Started!
-18:15:39.167 result1 = 0
-18:15:39.168 result2 = 0
-18:15:39.168 ====Main Thread End====
-18:15:39.169 Current Thread ID is : 3
-18:15:39.171 Current Thread ID is : 4
-18:15:40.179 Thread #4 doWork:2 + 2 = 4
-18:15:40.179 Thread 2 Completed!
-18:15:41.181 Thread #3 doWork:1 + 1 = 2
-18:15:41.181 Thread 1 Completed!
-</pre></td></tr></tbody></table></code></div></div>
-<p>我们可以看到因为没有等待子线程的执行，Main Thread 提前结束了。 如果不是后面的 Console.ReadKey() 在等待，那么子线程可能没有执行完毕就被回收了。</p>
-
-<p>从上面可以看出，从子线程中取得执行结果的方式比较繁琐，而且必须控制好等待子线程执行完毕，否则可能不能得到正确的结果。</p>
-
-<h2 id="异步编程-async-await"><span class="me-2">异步编程 Async Await</span><a href="#异步编程-async-await" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>使用异步编程的方法，我们可以把耗时的函数封装成 async 的方法，然后在需要得到结果的地方使用 await。
-我们将上面的 doWork 包装到一个异步方法</p>
-<div class="language-csharp highlighter-rouge"><div class="code-header">
-        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="rouge-code"><pre><span class="k">static</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="nf">doWorkAsync</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="n">ms</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">result</span> <span class="p">=</span> <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="nf">Run</span><span class="p">(()</span> <span class="p">=&gt;</span><span class="nf">doWork</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">ms</span><span class="p">));</span>
-    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="k">static</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">AsyncAwaitTest</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">result1</span>  <span class="p">=</span> <span class="k">await</span> <span class="nf">doWorkAsync</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">2000</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">result2</span> <span class="p">=</span> <span class="k">await</span> <span class="nf">doWorkAsync</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">1000</span><span class="p">);</span>
-    <span class="nf">Print</span><span class="p">(</span><span class="s">$"result1 = </span><span class="p">{</span><span class="n">result1</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-    <span class="nf">Print</span><span class="p">(</span><span class="s">$"result2 = </span><span class="p">{</span><span class="n">result2</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
+<span class="n">BOOST_PYTHON_MODULE</span><span class="p">(</span><span class="n">Pyutil</span><span class="p">)</span>  
+<span class="p">{</span>  
+    <span class="n">def</span><span class="p">(</span><span class="s">"Recognise"</span><span class="p">,</span><span class="n">Recognise</span><span class="p">);</span>  
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p>将 Main 函数中的 ThreadTest() 换成 AsyncAwaitTest().Wait()，我们可以看到执行结果如下：</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+
+<p>4 运行，将生成的dll和lib文件拷到python的工作目录，将dll的后缀该为pyd(注意不是pyc)，然后就可以使用了。</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">Pyutil</span>  
+<span class="n">result</span> <span class="o">=</span> <span class="n">Pyutil</span><span class="p">.</span><span class="nc">Recognise</span><span class="p">(</span><span class="sh">"</span><span class="s">192.168.1.1</span><span class="sh">"</span><span class="p">)</span>  
+<span class="k">print</span> <span class="sh">"</span><span class="s">the result is: </span><span class="se">\n</span><span class="sh">"</span><span class="o">+</span> <span class="n">result</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>5 需要注意的问题和可能遇到的问题</p>
+
+<p>（1）dynamic module does not define init function，请检查模块的名字和dll的名字一致性；</p>
+
+<p>（2）注意vs需要release下进行；</p>
+
+<p>（3）使用boost静态python库的话需要在属性-&gt;Preprocessor-&gt;Preprocessor Definitions中定义BOOST_PYTHON_STATIC_LIB，否则编译的为动态，会提示找不到python_boost*.lib什么的。</p>
+
+<p>二、Python利用Cython调用C，C++</p>
+
+<p>利用Cython也可进行对C，C++函数的调用，相对与利用Boost库的方法要繁琐一些。</p>
+
+<p>1 下载Cython，用python setup.py install进行安装。</p>
+
+<p>2 一个实例</p>
+
+<p>1) 创建helloworld目录</p>
+
+<p>创建helloworld.pyx,内容如下：</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">cdef</span> <span class="n">extern</span> <span class="k">from</span><span class="sh">"</span><span class="s">stdio.h</span><span class="sh">"</span><span class="p">:</span>
+    <span class="n">extern</span> <span class="nb">int</span> <span class="nf">printf</span><span class="p">(</span><span class="n">const</span> <span class="n">char</span> <span class="o">*</span><span class="nb">format</span><span class="p">,</span> <span class="p">...)</span> 
+<span class="k">def</span> <span class="nf">SayHello</span><span class="p">():</span>
+    <span class="nf">printf</span><span class="p">(</span><span class="sh">"</span><span class="s">hello,world</span><span class="se">\n</span><span class="sh">"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>2) 编译，利用python的Distutils</p>
+
+<p>helloworld目录下创建Setup.py,内容如下：</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -988,71 +984,48 @@
 7
 8
 9
-</pre></td><td class="rouge-code"><pre>18:16:03.864 ====Main Thread Start====
-18:16:03.866 Main Thread ID is : 1
-18:16:03.893 Current Thread ID is : 3
-18:16:05.899 Thread #3 doWork:1 + 1 = 2
-18:16:05.901 Current Thread ID is : 4
-18:16:06.914 Thread #4 doWork:2 + 2 = 4
-18:16:06.915 result1 = 2
-18:16:06.917 result2 = 4
-18:16:06.917 ====Main Thread End====
+10
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="n">distutils.core</span> <span class="kn">import</span> <span class="n">setup</span>
+<span class="kn">from</span> <span class="n">distutils.extension</span> <span class="kn">import</span> <span class="n">Extension</span>
+<span class="kn">from</span> <span class="n">Cython.Build</span> <span class="kn">import</span> <span class="n">cythonize</span>
+
+<span class="nf">setup</span><span class="p">(</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="sh">'</span><span class="s">helloworld</span><span class="sh">'</span><span class="p">,</span>
+  <span class="n">ext_modules</span><span class="o">=</span><span class="nf">cythonize</span><span class="p">([</span>
+    <span class="nc">Extension</span><span class="p">(</span><span class="sh">"</span><span class="s">helloworld</span><span class="sh">"</span><span class="p">,</span> <span class="p">[</span><span class="sh">"</span><span class="s">helloworld.pyx</span><span class="sh">"</span><span class="p">]),</span>
+    <span class="p">]),</span>
+<span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p>我们可以看到，异步方法执行的时候，实际上还是还有有其他线程来执行，其效果和线程的写法类似，但是写法上要简洁很多，也不需要定义全局变量来获取线程执行的结果。 大大减轻了编程的难度。 
-使用 await 关键字之后，一定会将正确的值复制到前面的变量，写法上与同步的方法类似，只是增加了 await 的关键字。
-注意，调用入口处，因为是同步函数，AsyncAwaitTest() 后面的 Wait() 方法是强制等待异步方法执行完毕，这个和前面 thread.Join 类似，但是不用单独管理线程。</p>
 
-<h2 id="总结"><span class="me-2">总结</span><a href="#总结" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>编译：</p>
 
-<p>所以异步方法执行是会产生线程的，我们再回头看文档</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>python Setup.py build
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#threads</p>
+<p>编译完成后会在build/lib.???目录下生成的helloworld.pyd。</p>
 
-<p>原来其强调的是 async 和 await 关键字不会创建其他线程，但是在真正执行到任务是，比如 调用 Task.Run 方法时，才会占用子线程，该子线程由 Task 来管理，而不需要我们手动去 new Thread，也不需要用 ThreadPool 来管理。</p>
+<p>安装（将生成的helloworld.pyd拷贝到Python目录的Lib/site-packages）,如果只想测试，则可以不进行安装，直接将生成的helloworld.pyd拷贝到工作目录即可。</p>
 
-<p>有关于 async 方法的调用机制，可以参考下面官方截图和解释
-<a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/media/task-asynchronous-programming-model/navigation-trace-async-program.png" class="popup img-link  shimmer"><img src="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/media/task-asynchronous-programming-model/navigation-trace-async-program.png" alt="" loading="lazy"></a></p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>python Setup.py <span class="nb">install</span> <span class="c">#安装</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>关系图中的数字对应于以下步骤，在调用方法调用异步方法时启动。</p>
+<p>3) 测试：</p>
 
-<ol>
-  <li>
-    <p>调用方法调用并等待 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 异步方法。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 可创建 <a href="https://docs.microsoft.com/zh-cn/dotnet/api/system.net.http.httpclient">HttpClient</a> 实例并调用 <a href="https://docs.microsoft.com/zh-cn/dotnet/api/system.net.http.httpclient.getstringasync">GetStringAsync</a> 异步方法以下载网站内容作为字符串。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetStringAsync</code> 中发生了某种情况，该情况挂起了它的进程。 可能必须等待网站下载或一些其他阻止活动。 为避免阻止资源，<code class="language-plaintext highlighter-rouge">GetStringAsync</code> 会将控制权出让给其调用方 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code>。</p>
-
-    <p><code class="language-plaintext highlighter-rouge">GetStringAsync</code> 返回 <a href="https://docs.microsoft.com/zh-cn/dotnet/api/system.threading.tasks.task-1">Task</a>，其中 <code class="language-plaintext highlighter-rouge">TResult</code> 为字符串，并且 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 将任务分配给 <code class="language-plaintext highlighter-rouge">getStringTask</code> 变量。 该任务表示调用 <code class="language-plaintext highlighter-rouge">GetStringAsync</code> 的正在进行的进程，其中承诺当工作完成时产生实际字符串值。</p>
-  </li>
-  <li>
-    <p>由于尚未等待 <code class="language-plaintext highlighter-rouge">getStringTask</code>，因此，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 可以继续执行不依赖于 <code class="language-plaintext highlighter-rouge">GetStringAsync</code> 得出的最终结果的其他工作。 该任务由对同步方法 <code class="language-plaintext highlighter-rouge">DoIndependentWork</code> 的调用表示。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">DoIndependentWork</code> 是完成其工作并返回其调用方的同步方法。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 已运行完毕，可以不受 <code class="language-plaintext highlighter-rouge">getStringTask</code> 的结果影响。 接下来，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 需要计算并返回已下载的字符串的长度，但该方法只有在获得字符串的情况下才能计算该值。</p>
-
-    <p>因此，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 使用一个 await 运算符来挂起其进度，并把控制权交给调用 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 的方法。 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 将 <code class="language-plaintext highlighter-rouge">Task&lt;int&gt;</code> 返回给调用方。 该任务表示对产生下载字符串长度的整数结果的一个承诺。</p>
-
-    <p>备注</p>
-
-    <p>如果 <code class="language-plaintext highlighter-rouge">GetStringAsync</code>（因此 <code class="language-plaintext highlighter-rouge">getStringTask</code>）在 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 等待前完成，则控制会保留在 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 中。 如果异步调用过程 <code class="language-plaintext highlighter-rouge">getStringTask</code> 已完成，并且 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 不必等待最终结果，则挂起然后返回到 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 将造成成本浪费。</p>
-
-    <p>在调用方法中，处理模式会继续。 在等待结果前，调用方可以开展不依赖于 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 结果的其他工作，否则就需等待片刻。 调用方法等待 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code>，而 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 等待 <code class="language-plaintext highlighter-rouge">GetStringAsync</code>。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetStringAsync</code> 完成并生成一个字符串结果。 字符串结果不是通过按你预期的方式调用 <code class="language-plaintext highlighter-rouge">GetStringAsync</code> 所返回的。 （记住，该方法已返回步骤 3 中的一个任务）。相反，字符串结果存储在表示 <code class="language-plaintext highlighter-rouge">getStringTask</code> 方法完成的任务中。 await 运算符从 <code class="language-plaintext highlighter-rouge">getStringTask</code> 中检索结果。 赋值语句将检索到的结果赋给 <code class="language-plaintext highlighter-rouge">contents</code>。</p>
-  </li>
-  <li>
-    <p>当 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 具有字符串结果时，该方法可以计算字符串长度。 然后，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 工作也将完成，并且等待事件处理程序可继续使用。 在此主题结尾处的完整示例中，可确认事件处理程序检索并打印长度结果的值。 如果你不熟悉异步编程，请花 1 分钟时间考虑同步行为和异步行为之间的差异。 当其工作完成时（第 5 步）会返回一个同步方法，但当其工作挂起时（第 3 步和第 6 步），异步方法会返回一个任务值。 在异步方法最终完成其工作时，任务会标记为已完成，而结果（如果有）将存储在任务中。</p>
-  </li>
-</ol>
-
-<p>【全文完】</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="o">&gt;&gt;</span>import helloworld 
+<span class="o">&gt;&gt;</span>helloworld.SayHello<span class="o">()</span> 
+<span class="o">&gt;&gt;</span>hello,world
+</pre></td></tr></tbody></table></code></div></div>
 
   </div>
 
@@ -1072,9 +1045,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/csharp/"
+            href="/tags/git/"
             class="post-tag no-text-decoration"
-          >csharp</a>
+          >git</a>
         
       </div>
     
@@ -1110,21 +1083,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=C#%20Async%20Await%20%E6%8E%A2%E7%A9%B6%20-%20Calvin's%20Blog&url=%2Fposts%2Fcsharp-async-await%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Python%20%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86%20-%20Calvin's%20Blog&url=%2Fposts%2Fpython-experience%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=C#%20Async%20Await%20%E6%8E%A2%E7%A9%B6%20-%20Calvin's%20Blog&u=%2Fposts%2Fcsharp-async-await%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Python%20%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86%20-%20Calvin's%20Blog&u=%2Fposts%2Fpython-experience%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=%2Fposts%2Fcsharp-async-await%2F&text=C#%20Async%20Await%20%E6%8E%A2%E7%A9%B6%20-%20Calvin's%20Blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2Fpython-experience%2F&text=Python%20%E4%BD%BF%E7%94%A8%E6%95%B4%E7%90%86%20-%20Calvin's%20Blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2348,55 +2321,55 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -2422,6 +2395,45 @@
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">相关文章</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/pro-git/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1677974400"
+  data-df="YYYY/MM/DD"
+  
+>
+  2023/03/05
+</time>
+
+              <h4 class="pt-0 my-2">Git Pro 读书简记</h4>
+              <div class="text-muted">
+                <p>Git是一个非常好的版本管理工具，一般只用到了一些常用的命令做简单的备份回退等。最近结合《ProGit》和《Git权威指南》进行了查漏补缺和更系统深入的学习，下面是结合ProGit一书做的读书简记。
+
+起步
+
+
+
+1 初次运行Git前的配置
+
+Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为的配置变量。这些变量存储在三个不同的位置：
+
+
+  . /etc/gi...</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/useful-frontend-library/" class="post-preview card h-100">
@@ -2499,36 +2511,6 @@
           </a>
         </article>
       
-        <article class="col">
-          <a href="/posts/how-to-create-ps-function/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1480661160"
-  data-df="YYYY/MM/DD"
-  
->
-  2016/12/02
-</time>
-
-              <h4 class="pt-0 my-2">如何创建标准的 PowerShell 函数</h4>
-              <div class="text-muted">
-                <p>PowerShell有很多内置的命令，我们自己也会创建很多自定义的脚本，上一篇介绍了我创建的一个在线PowerTask类库就是自定义的脚本，其显示的方式跟默认的命令很类似，如何使自己创建的脚本能有系统自带的命令一样的体验呢？
-
-答案就在于Function，在Windows PowerShell 2.0 中引入了一种新类型的Function，叫Advanced Function，通过它你可以创...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -2544,21 +2526,21 @@
 
   
     <a
-      href="/posts/fix-port-in-use-issue/"
+      href="/posts/pro-git/"
       class="btn btn-outline-primary"
       aria-label="上一篇"
     >
-      <p>解决端口占用问题</p>
+      <p>Git Pro 读书简记</p>
     </a>
   
 
   
     <a
-      href="/posts/gift-exchange/"
+      href="/posts/how-to-prepare-az-305/"
       class="btn btn-outline-primary"
       aria-label="下一篇"
     >
-      <p>圣诞特辑-交换礼物</p>
+      <p>如何准备 AZ-305 考试</p>
     </a>
   
 </nav>

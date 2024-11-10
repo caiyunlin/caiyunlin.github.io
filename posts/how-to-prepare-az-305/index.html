@@ -30,25 +30,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="C# Async Await 探究" />
+<meta property="og:title" content="如何准备 AZ-305 考试" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="description" content="这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?" />
-<meta property="og:description" content="这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?" />
-<link rel="canonical" href="/posts/csharp-async-await/" />
-<meta property="og:url" content="/posts/csharp-async-await/" />
+<meta name="description" content="AZ-305 是微软提供的 Azure 认证考试之一，考试的全称是 Designing Microsoft Azure Infrastructure Solutions, 考试通过后获取的证书名称是 Microsoft Certified: Azure Solutions Architect Expert。 AZ-305 认证主要面向云解决方案架构师，其核心作用是帮助 IT 专业人士掌握在 Microsoft Azure 平台上设计和构建企业级云解决方案的能力，对于想从事云解决方案架构师的工作还是蛮有帮助的。 下面我列举一些自己在准备 AZ-305 考试的一些心得，仅供参考。" />
+<meta property="og:description" content="AZ-305 是微软提供的 Azure 认证考试之一，考试的全称是 Designing Microsoft Azure Infrastructure Solutions, 考试通过后获取的证书名称是 Microsoft Certified: Azure Solutions Architect Expert。 AZ-305 认证主要面向云解决方案架构师，其核心作用是帮助 IT 专业人士掌握在 Microsoft Azure 平台上设计和构建企业级云解决方案的能力，对于想从事云解决方案架构师的工作还是蛮有帮助的。 下面我列举一些自己在准备 AZ-305 考试的一些心得，仅供参考。" />
+<link rel="canonical" href="/posts/how-to-prepare-az-305/" />
+<meta property="og:url" content="/posts/how-to-prepare-az-305/" />
 <meta property="og:site_name" content="Calvin’s Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-12T15:14:00+08:00" />
+<meta property="article:published_time" content="2024-08-29T07:35:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="C# Async Await 探究" />
+<meta property="twitter:title" content="如何准备 AZ-305 考试" />
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-10T08:10:33+08:00","datePublished":"2021-08-12T15:14:00+08:00","description":"这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?","headline":"C# Async Await 探究","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/csharp-async-await/"},"url":"/posts/csharp-async-await/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-08-29T07:35:00+08:00","datePublished":"2024-08-29T07:35:00+08:00","description":"AZ-305 是微软提供的 Azure 认证考试之一，考试的全称是 Designing Microsoft Azure Infrastructure Solutions, 考试通过后获取的证书名称是 Microsoft Certified: Azure Solutions Architect Expert。 AZ-305 认证主要面向云解决方案架构师，其核心作用是帮助 IT 专业人士掌握在 Microsoft Azure 平台上设计和构建企业级云解决方案的能力，对于想从事云解决方案架构师的工作还是蛮有帮助的。 下面我列举一些自己在准备 AZ-305 考试的一些心得，仅供参考。","headline":"如何准备 AZ-305 考试","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/how-to-prepare-az-305/"},"url":"/posts/how-to-prepare-az-305/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
-    <title>C# Async Await 探究 | Calvin's Blog
+    <title>如何准备 AZ-305 考试 | Calvin's Blog
     </title>
   
     <!--
@@ -410,7 +410,7 @@
         
           
             
-              <span>C# Async Await 探究</span>
+              <span>如何准备 AZ-305 考试</span>
             
 
           
@@ -478,79 +478,6 @@
 
 
 
-  
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
 
 <!-- Add header for code snippets -->
 
@@ -573,6 +500,39 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -635,7 +595,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>C# Async Await 探究</h1>
+    <h1 data-toc-skip>如何准备 AZ-305 考试</h1>
     
 
     <div class="post-meta text-muted">
@@ -652,41 +612,18 @@
 
 <time
   
-  data-ts="1628752440"
+  data-ts="1724888100"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2021/08/12
+  2024/08/29
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          更新于
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1731197433"
-  data-df="YYYY/MM/DD"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  2024/11/10
-</time>
-
-        </span>
       
 
       
@@ -730,9 +667,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2351 字"
+  title="1411 字"
 >
-  <em>13 分钟</em>阅读</span>
+  <em>7 分钟</em>阅读</span>
 
         </div>
       </div>
@@ -740,317 +677,67 @@
   </header>
 
   <div class="content">
-    <p>这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?</p>
+    <p>AZ-305 是微软提供的 Azure 认证考试之一，考试的全称是 <code class="language-plaintext highlighter-rouge">Designing Microsoft Azure Infrastructure Solutions</code>, 考试通过后获取的证书名称是 <code class="language-plaintext highlighter-rouge">Microsoft Certified: Azure Solutions Architect Expert</code>。</p>
 
-<p>当时直观的感觉是会创建，觉得 async await 只是语法糖，当前线程没有被 block，而后台肯定需要做事，所以必然会创建新的线程去执行任务才对。</p>
+<p>AZ-305 认证主要面向云解决方案架构师，其核心作用是帮助 IT 专业人士掌握在 Microsoft Azure 平台上设计和构建企业级云解决方案的能力，对于想从事云解决方案架构师的工作还是蛮有帮助的。</p>
 
-<p>然而查了文档，发现官方文档明确说明： <code class="language-plaintext highlighter-rouge">async</code> 和 <code class="language-plaintext highlighter-rouge">await</code> 关键字不会创建其他线程。 因为异步方法不会在其自身线程上运行，因此它不需要多线程。</p>
+<p>下面我列举一些自己在准备 AZ-305 考试的一些心得，仅供参考。</p>
 
-<p>参考：https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#threads</p>
+<h2 id="前置条件"><span class="me-2">前置条件</span><a href="#前置条件" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>AZ-305 认证适合有一定 Azure 经验的专业人士，要考取 AZ-305 ，你需要有 Azure Administrator 相关的技能，必须先考取 AZ-104 ，也就是 Microsoft Certified: Azure Administrator Associate</p>
 
-<p>如果没有创建线程，到底谁在后台执行任务呢？带着这个问题，好好捋一下 async await 这个新特性。</p>
+<h2 id="考题形式"><span class="me-2">考题形式</span><a href="#考题形式" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>微软AZ-305考试由40-60个问题组成。基于场景的单选题、多选题、顺序排列型题、拖放型题 以及 标注复习、拖放型题均包含在考试中。考生必须获得700分或更高的分数才能通过考试。因为相关技术的术语问题，我选择的是英文版本，AZ-305 考试的英文版本，费用为165美元。</p>
 
-<h2 id="子线程"><span class="me-2">子线程</span><a href="#子线程" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>在没有 async 和 await 关键字的时候，如果我们需要在后台执行一些耗时任务时，就可以开启新的线程来完成。
-现在我们模拟一个耗时任务 doWord 函数，该函数完成一个加法并返回结果，为了模拟耗时，加入了 ms 参数用来 Sleep 模拟耗时。</p>
+<h2 id="考试范围"><span class="me-2">考试范围</span><a href="#考试范围" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>考试的内容分为4大块，可以参考比率，详情可以在官网 https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/ 查看。</p>
 
-<p>具体测试代码如下，我们在主线程中开启了两个子线程来执行两个耗时的任务，执行完成后输出得到的结果。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="code-header">
-        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-</pre></td><td class="rouge-code"><pre>    <span class="k">class</span> <span class="nc">Program</span>
-    <span class="p">{</span>
-        <span class="k">static</span> <span class="k">void</span> <span class="nf">Print</span><span class="p">(</span><span class="kt">string</span> <span class="n">message</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">string</span> <span class="n">now</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="nf">ToString</span><span class="p">(</span><span class="s">"HH:mm:ss.fff"</span><span class="p">);</span>
-            <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">$"</span><span class="p">{</span><span class="n">now</span><span class="p">}</span><span class="s"> </span><span class="p">{</span><span class="n">message</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-        <span class="p">}</span>
-
-        <span class="k">static</span> <span class="kt">int</span> <span class="nf">doWork</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="n">ms</span> <span class="p">=</span> <span class="m">1000</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">threadId</span> <span class="p">=</span> <span class="n">Thread</span><span class="p">.</span><span class="n">CurrentThread</span><span class="p">.</span><span class="n">ManagedThreadId</span><span class="p">;</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"Current Thread ID is : </span><span class="p">{</span><span class="n">threadId</span><span class="p">}</span><span class="s"> "</span><span class="p">);</span>
-            <span class="n">Thread</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="n">ms</span><span class="p">);</span>
-            <span class="kt">int</span> <span class="n">result</span> <span class="p">=</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"Thread #</span><span class="p">{</span><span class="n">threadId</span><span class="p">}</span><span class="s"> doWork:</span><span class="p">{</span><span class="n">a</span><span class="p">}</span><span class="s"> + </span><span class="p">{</span><span class="n">b</span><span class="p">}</span><span class="s"> = </span><span class="p">{</span><span class="n">result</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-            <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"====Main Thread Start===="</span><span class="p">);</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"Main Thread ID is : </span><span class="p">{</span><span class="n">Thread</span><span class="p">.</span><span class="n">CurrentThread</span><span class="p">.</span><span class="n">ManagedThreadId</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-            <span class="nf">ThreadTest</span><span class="p">();</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"====Main Thread End===="</span><span class="p">);</span>
-            <span class="n">Console</span><span class="p">.</span><span class="nf">ReadKey</span><span class="p">();</span>
-        <span class="p">}</span>
-
-        <span class="k">static</span> <span class="k">void</span> <span class="nf">ThreadTest</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">result1</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-            <span class="kt">int</span> <span class="n">result2</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-
-            <span class="n">Thread</span> <span class="n">thread1</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Thread</span><span class="p">(()</span> <span class="p">=&gt;</span>
-            <span class="p">{</span>
-                <span class="n">result1</span> <span class="p">=</span> <span class="nf">doWork</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">2000</span><span class="p">);</span>
-                <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 1 Completed! "</span><span class="p">);</span>
-            <span class="p">});</span>
-
-            <span class="n">Thread</span> <span class="n">thread2</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Thread</span><span class="p">(()</span> <span class="p">=&gt;</span>
-            <span class="p">{</span>
-                <span class="n">result2</span> <span class="p">=</span> <span class="nf">doWork</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">1000</span><span class="p">);</span>
-                <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 2 Completed! "</span><span class="p">);</span>
-            <span class="p">});</span>
-
-            <span class="n">thread1</span><span class="p">.</span><span class="nf">Start</span><span class="p">();</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 1 Started! "</span><span class="p">);</span>
-
-            <span class="n">thread2</span><span class="p">.</span><span class="nf">Start</span><span class="p">();</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">"Thread 2 Started! "</span><span class="p">);</span>
-
-            <span class="c1">//wait thread to complete</span>
-            <span class="n">thread1</span><span class="p">.</span><span class="nf">Join</span><span class="p">();</span>
-            <span class="n">thread2</span><span class="p">.</span><span class="nf">Join</span><span class="p">();</span>
-
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"result1 = </span><span class="p">{</span><span class="n">result1</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-            <span class="nf">Print</span><span class="p">(</span><span class="s">$"result2 = </span><span class="p">{</span><span class="n">result2</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-        <span class="p">}</span>
-
-    <span class="p">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>输出如下，为了方便表示执行的线程，我们 doWork 任务里面打印了”线程号”</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre>18:15:19.688 ====Main Thread Start====
-18:15:19.690 Main Thread ID is : 1
-18:15:19.691 Thread 1 Started!
-18:15:19.692 Thread 2 Started!
-18:15:19.694 Current Thread ID is : 3
-18:15:19.694 Current Thread ID is : 4
-18:15:20.709 Thread #4 doWork:2 + 2 = 4
-18:15:20.709 Thread 2 Completed!
-18:15:21.699 Thread #3 doWork:1 + 1 = 2
-18:15:21.699 Thread 1 Completed!
-18:15:21.704 result1 = 2
-18:15:21.704 result2 = 4
-18:15:21.704 ====Main Thread End====
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>我们可以看到主线程调用 ThreadTest 函数，创建了2个子线程，其中子线程1 耗时2秒，线程2耗时1秒，所以线程2先完成了。
-最后 thread1.Join() 和 thread2.Join() 用于阻塞等待两个线程，直到他们都执行完毕。</p>
-
-<p>这里需要注意，一定要 thread1.Join() 和 thread2.Join()，如果注释掉这两句，则返回结果如下</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre>18:15:39.162 ====Main Thread Start====
-18:15:39.164 Main Thread ID is : 1
-18:15:39.165 Thread 1 Started!
-18:15:39.166 Thread 2 Started!
-18:15:39.167 result1 = 0
-18:15:39.168 result2 = 0
-18:15:39.168 ====Main Thread End====
-18:15:39.169 Current Thread ID is : 3
-18:15:39.171 Current Thread ID is : 4
-18:15:40.179 Thread #4 doWork:2 + 2 = 4
-18:15:40.179 Thread 2 Completed!
-18:15:41.181 Thread #3 doWork:1 + 1 = 2
-18:15:41.181 Thread 1 Completed!
-</pre></td></tr></tbody></table></code></div></div>
-<p>我们可以看到因为没有等待子线程的执行，Main Thread 提前结束了。 如果不是后面的 Console.ReadKey() 在等待，那么子线程可能没有执行完毕就被回收了。</p>
-
-<p>从上面可以看出，从子线程中取得执行结果的方式比较繁琐，而且必须控制好等待子线程执行完毕，否则可能不能得到正确的结果。</p>
-
-<h2 id="异步编程-async-await"><span class="me-2">异步编程 Async Await</span><a href="#异步编程-async-await" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>使用异步编程的方法，我们可以把耗时的函数封装成 async 的方法，然后在需要得到结果的地方使用 await。
-我们将上面的 doWork 包装到一个异步方法</p>
-<div class="language-csharp highlighter-rouge"><div class="code-header">
-        <span data-label-text="C#"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="rouge-code"><pre><span class="k">static</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="nf">doWorkAsync</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="n">ms</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">result</span> <span class="p">=</span> <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="nf">Run</span><span class="p">(()</span> <span class="p">=&gt;</span><span class="nf">doWork</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">ms</span><span class="p">));</span>
-    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="k">static</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">AsyncAwaitTest</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">result1</span>  <span class="p">=</span> <span class="k">await</span> <span class="nf">doWorkAsync</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">2000</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">result2</span> <span class="p">=</span> <span class="k">await</span> <span class="nf">doWorkAsync</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">1000</span><span class="p">);</span>
-    <span class="nf">Print</span><span class="p">(</span><span class="s">$"result1 = </span><span class="p">{</span><span class="n">result1</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-    <span class="nf">Print</span><span class="p">(</span><span class="s">$"result2 = </span><span class="p">{</span><span class="n">result2</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-<p>将 Main 函数中的 ThreadTest() 换成 AsyncAwaitTest().Wait()，我们可以看到执行结果如下：</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre>18:16:03.864 ====Main Thread Start====
-18:16:03.866 Main Thread ID is : 1
-18:16:03.893 Current Thread ID is : 3
-18:16:05.899 Thread #3 doWork:1 + 1 = 2
-18:16:05.901 Current Thread ID is : 4
-18:16:06.914 Thread #4 doWork:2 + 2 = 4
-18:16:06.915 result1 = 2
-18:16:06.917 result2 = 4
-18:16:06.917 ====Main Thread End====
-</pre></td></tr></tbody></table></code></div></div>
-<p>我们可以看到，异步方法执行的时候，实际上还是还有有其他线程来执行，其效果和线程的写法类似，但是写法上要简洁很多，也不需要定义全局变量来获取线程执行的结果。 大大减轻了编程的难度。 
-使用 await 关键字之后，一定会将正确的值复制到前面的变量，写法上与同步的方法类似，只是增加了 await 的关键字。
-注意，调用入口处，因为是同步函数，AsyncAwaitTest() 后面的 Wait() 方法是强制等待异步方法执行完毕，这个和前面 thread.Join 类似，但是不用单独管理线程。</p>
-
-<h2 id="总结"><span class="me-2">总结</span><a href="#总结" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>所以异步方法执行是会产生线程的，我们再回头看文档</p>
-
-<p>https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#threads</p>
-
-<p>原来其强调的是 async 和 await 关键字不会创建其他线程，但是在真正执行到任务是，比如 调用 Task.Run 方法时，才会占用子线程，该子线程由 Task 来管理，而不需要我们手动去 new Thread，也不需要用 ThreadPool 来管理。</p>
-
-<p>有关于 async 方法的调用机制，可以参考下面官方截图和解释
-<a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/media/task-asynchronous-programming-model/navigation-trace-async-program.png" class="popup img-link  shimmer"><img src="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/media/task-asynchronous-programming-model/navigation-trace-async-program.png" alt="" loading="lazy"></a></p>
-
-<p>关系图中的数字对应于以下步骤，在调用方法调用异步方法时启动。</p>
+<ul>
+  <li>Design identity, governance, and monitoring solutions (25–30%)</li>
+  <li>Design data storage solutions (20–25%)</li>
+  <li>Design business continuity solutions (15–20%)</li>
+  <li>Design infrastructure solutions (30–35%)</li>
+</ul>
 
 <ol>
-  <li>
-    <p>调用方法调用并等待 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 异步方法。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 可创建 <a href="https://docs.microsoft.com/zh-cn/dotnet/api/system.net.http.httpclient">HttpClient</a> 实例并调用 <a href="https://docs.microsoft.com/zh-cn/dotnet/api/system.net.http.httpclient.getstringasync">GetStringAsync</a> 异步方法以下载网站内容作为字符串。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetStringAsync</code> 中发生了某种情况，该情况挂起了它的进程。 可能必须等待网站下载或一些其他阻止活动。 为避免阻止资源，<code class="language-plaintext highlighter-rouge">GetStringAsync</code> 会将控制权出让给其调用方 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code>。</p>
-
-    <p><code class="language-plaintext highlighter-rouge">GetStringAsync</code> 返回 <a href="https://docs.microsoft.com/zh-cn/dotnet/api/system.threading.tasks.task-1">Task</a>，其中 <code class="language-plaintext highlighter-rouge">TResult</code> 为字符串，并且 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 将任务分配给 <code class="language-plaintext highlighter-rouge">getStringTask</code> 变量。 该任务表示调用 <code class="language-plaintext highlighter-rouge">GetStringAsync</code> 的正在进行的进程，其中承诺当工作完成时产生实际字符串值。</p>
-  </li>
-  <li>
-    <p>由于尚未等待 <code class="language-plaintext highlighter-rouge">getStringTask</code>，因此，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 可以继续执行不依赖于 <code class="language-plaintext highlighter-rouge">GetStringAsync</code> 得出的最终结果的其他工作。 该任务由对同步方法 <code class="language-plaintext highlighter-rouge">DoIndependentWork</code> 的调用表示。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">DoIndependentWork</code> 是完成其工作并返回其调用方的同步方法。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 已运行完毕，可以不受 <code class="language-plaintext highlighter-rouge">getStringTask</code> 的结果影响。 接下来，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 需要计算并返回已下载的字符串的长度，但该方法只有在获得字符串的情况下才能计算该值。</p>
-
-    <p>因此，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 使用一个 await 运算符来挂起其进度，并把控制权交给调用 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 的方法。 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 将 <code class="language-plaintext highlighter-rouge">Task&lt;int&gt;</code> 返回给调用方。 该任务表示对产生下载字符串长度的整数结果的一个承诺。</p>
-
-    <p>备注</p>
-
-    <p>如果 <code class="language-plaintext highlighter-rouge">GetStringAsync</code>（因此 <code class="language-plaintext highlighter-rouge">getStringTask</code>）在 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 等待前完成，则控制会保留在 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 中。 如果异步调用过程 <code class="language-plaintext highlighter-rouge">getStringTask</code> 已完成，并且 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 不必等待最终结果，则挂起然后返回到 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 将造成成本浪费。</p>
-
-    <p>在调用方法中，处理模式会继续。 在等待结果前，调用方可以开展不依赖于 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 结果的其他工作，否则就需等待片刻。 调用方法等待 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code>，而 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 等待 <code class="language-plaintext highlighter-rouge">GetStringAsync</code>。</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">GetStringAsync</code> 完成并生成一个字符串结果。 字符串结果不是通过按你预期的方式调用 <code class="language-plaintext highlighter-rouge">GetStringAsync</code> 所返回的。 （记住，该方法已返回步骤 3 中的一个任务）。相反，字符串结果存储在表示 <code class="language-plaintext highlighter-rouge">getStringTask</code> 方法完成的任务中。 await 运算符从 <code class="language-plaintext highlighter-rouge">getStringTask</code> 中检索结果。 赋值语句将检索到的结果赋给 <code class="language-plaintext highlighter-rouge">contents</code>。</p>
-  </li>
-  <li>
-    <p>当 <code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 具有字符串结果时，该方法可以计算字符串长度。 然后，<code class="language-plaintext highlighter-rouge">GetUrlContentLengthAsync</code> 工作也将完成，并且等待事件处理程序可继续使用。 在此主题结尾处的完整示例中，可确认事件处理程序检索并打印长度结果的值。 如果你不熟悉异步编程，请花 1 分钟时间考虑同步行为和异步行为之间的差异。 当其工作完成时（第 5 步）会返回一个同步方法，但当其工作挂起时（第 3 步和第 6 步），异步方法会返回一个任务值。 在异步方法最终完成其工作时，任务会标记为已完成，而结果（如果有）将存储在任务中。</p>
-  </li>
+  <li>建议是按照官网的 Self-paced learning path 去逐步学习，学习过程中会有一些 lab 训练，如果时间有限，可以先从概念上理解，后面有时间再补充lab。</li>
+  <li>学习完 learning path 之后，就可以准备考试了，注意考前一定有多刷几遍模拟考题，官网建议是超过80分再预约考试，我个人建议是最好多次超过90分再去预约。</li>
+  <li>对于整个概念的理解，我在文章底部也给出了 Youtube 视频讲解，我个人感觉还是蛮有用的，考前刷两遍，便于整体上有很好的总结和理解。</li>
+  <li>掌握好 learning path 和 Youtube 的两个视频，应该足够应付考试了，应该不需要再付费参加其他培训。</li>
 </ol>
+
+<h2 id="考前准备"><span class="me-2">考前准备</span><a href="#考前准备" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>报名：点击 <a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/">官网</a> 中的 “Schedule exam” 按钮，系统会跳转到 “Pearson Vue” 准备界面，如果你没有登录，则需提前登录 Microsoft 账号(@msn.com,@hotmail.com 或者 @live.com)之类，建议不要使用你的公司账号，因为证书是和邮箱绑定的。</li>
+  <li>填写好你个人的联系方式，点击按钮跳转后，可以选择 “Online with OnVue”, 这样系统会安排一个在线考试</li>
+  <li>对于在线考试，需要注意： 1. 需要准备好电脑（考试前会收到邮件让运行一个 system test，需要通过测试)，2. 准备一个独立的空间（考试的时候，不要有其他人干扰，或者其他人看到你的屏幕），3. 身份证，4. 提前30分钟登录，以准备好考前验证之类的工作</li>
+  <li>一路点击 OnVue 的 Next 页面，选择考试的日期和时间，最后会来到付款页面，绑定信用卡可以付款，如果公司有折扣的会在这一步自动抵扣，比如微软的员工就可以抵扣全额，直接提交即可。</li>
+  <li>OnVue会发送邮件到邮箱，提示考试日期以前需要提前准备的内容，有个模拟考试的程序，建议考前使用一下，这样真实考试的时候，也不会太陌生。</li>
+</ul>
+
+<h2 id="考试过程"><span class="me-2">考试过程</span><a href="#考试过程" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>提前30分钟登录后，运行 OnVue 程序</li>
+  <li>OnVue程序会关闭系统其他软件，验证麦克风和摄像头，考试过程中摄像头是全程开启的</li>
+  <li>然后系统会提示你用手机扫描二维码，拍摄身份证，拍摄前后左右区域</li>
+  <li>监考官会验证你的证件和区域，当验证完毕之后，就开始准备考试了，点击确定之后，你就全程不可以离开摄像头了</li>
+  <li>然后就是答题，注意真实的考题和模拟考题题型是有不同的，模拟考试一般都是单选，但是真实考试有单选题、多选题、顺序排列型题、拖放型题，其中最开始还有场景模拟题，会设置一个基础的客户环境的场景，然后有一组题目，注意这组题目确认提交之后，是不可以再回去修改的。</li>
+  <li>考试通过的分数是 700 分，在你提交的当时就会立刻显示你考试的分数，通知你有没有考试通过，如果没有通过也没有关系，系统会提示出哪一项你还比较薄弱，可以针对性的再准备，然后24小时候可以再次预约考试，考试有4次的重考机会。</li>
+</ul>
+
+<h2 id="相关链接"><span class="me-2">相关链接</span><a href="#相关链接" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li><a href="https://learn.microsoft.com/en-us/training/courses/az-104t00">AZ-104 考试入口</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104">AZ-104 学习指南</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification">AZ-104 模拟考试</a></li>
+  <li><a href="https://www.youtube.com/watch?v=0Knf9nub4-k">AZ-104 Youtube 视频讲解(需科学上网)</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/">AZ-305 考试入口</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305">AZ-305 学习指南</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/practice/assessment?assessmentId=15&amp;assessment-type=practice">AZ-305 模拟考试</a></li>
+  <li><a href="https://www.youtube.com/watch?v=vq9LuCM4YP4">AZ-305 Youtube 视频讲解(需科学上网)</a></li>
+</ul>
+
+<p>最后祝大家能顺利通过考试!</p>
 
 <p>【全文完】</p>
 
@@ -1072,9 +759,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/csharp/"
+            href="/tags/azure/"
             class="post-tag no-text-decoration"
-          >csharp</a>
+          >azure</a>
         
       </div>
     
@@ -1110,21 +797,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=C#%20Async%20Await%20%E6%8E%A2%E7%A9%B6%20-%20Calvin's%20Blog&url=%2Fposts%2Fcsharp-async-await%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87%20AZ-305%20%E8%80%83%E8%AF%95%20-%20Calvin's%20Blog&url=%2Fposts%2Fhow-to-prepare-az-305%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=C#%20Async%20Await%20%E6%8E%A2%E7%A9%B6%20-%20Calvin's%20Blog&u=%2Fposts%2Fcsharp-async-await%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87%20AZ-305%20%E8%80%83%E8%AF%95%20-%20Calvin's%20Blog&u=%2Fposts%2Fhow-to-prepare-az-305%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=%2Fposts%2Fcsharp-async-await%2F&text=C#%20Async%20Await%20%E6%8E%A2%E7%A9%B6%20-%20Calvin's%20Blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2Fhow-to-prepare-az-305%2F&text=%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87%20AZ-305%20%E8%80%83%E8%AF%95%20-%20Calvin's%20Blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2348,67 +2035,67 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2544,22 +2231,18 @@
 
   
     <a
-      href="/posts/fix-port-in-use-issue/"
+      href="/posts/python-experience/"
       class="btn btn-outline-primary"
       aria-label="上一篇"
     >
-      <p>解决端口占用问题</p>
+      <p>Python 使用整理</p>
     </a>
   
 
   
-    <a
-      href="/posts/gift-exchange/"
-      class="btn btn-outline-primary"
-      aria-label="下一篇"
-    >
-      <p>圣诞特辑-交换礼物</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="下一篇">
+      <p>-</p>
+    </div>
   
 </nav>
 

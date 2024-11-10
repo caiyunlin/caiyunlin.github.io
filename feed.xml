@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Calvin's Blog</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2024-11-10T08:11:12+08:00</updated>
+  <updated>2024-11-10T22:10:59+08:00</updated>
   <author>
     <name>Calvin</name>
     <uri>/</uri>
@@ -17,6 +17,127 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>如何准备 AZ-305 考试</title>
+    <link href="/posts/how-to-prepare-az-305/" rel="alternate" type="text/html" title="如何准备 AZ-305 考试" />
+    <published>2024-08-29T07:35:00+08:00</published>
+  
+    <updated>2024-08-29T07:35:00+08:00</updated>
+  
+    <id>/posts/how-to-prepare-az-305/</id>
+    <content src="/posts/how-to-prepare-az-305/" />
+    <author>
+      <name>Calvin</name>
+    </author>
+
+  
+    
+    <category term="技术" />
+    
+  
+
+  <summary>AZ-305 是微软提供的 Azure 认证考试之一，考试的全称是 Designing Microsoft Azure Infrastructure Solutions, 考试通过后获取的证书名称是 Microsoft Certified: Azure Solutions Architect Expert。
+
+AZ-305 认证主要面向云解决方案架构师，其核心作用是帮助 IT 专业人士掌握在 Microsoft Azure 平台上设计和构建企业级云解决方案的能力，对于想从事云解决方案架构师的工作还是蛮有帮助的。
+
+下面我列举一些自己在准备 AZ-305 考试的一些心得，仅供参考。
+
+前置条件
+AZ-305 认证适合有一定 Azure 经验的专业人士，要考取 AZ-305 ，你需要有 Azure Administrator 相关的技能，必须先考取 AZ-104 ，也就是 Microso...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Python 使用整理</title>
+    <link href="/posts/python-experience/" rel="alternate" type="text/html" title="Python 使用整理" />
+    <published>2023-04-16T08:00:00+08:00</published>
+  
+    <updated>2023-04-16T08:00:00+08:00</updated>
+  
+    <id>/posts/python-experience/</id>
+    <content src="/posts/python-experience/" />
+    <author>
+      <name>Calvin</name>
+    </author>
+
+  
+    
+    <category term="技术" />
+    
+  
+
+  <summary>Python 启动http服务器
+
+# Python3
+python -m http.server -cgi 8080
+
+
+Python 取环境变量
+
+import os
+print(os.environ[&amp;#39;YOURENVNAME&amp;#39;])
+
+
+Python Function定义
+
+def my_func(a, b):
+    return a+b
+
+
+Python 时间戳
+
+import time
+now = int(round(time.time()*1000))
+now02 = time.strftime(&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;,time.localtime(now/1000))
+now02
+# Use below
+now =  time.strftime(&amp;#39;%Y-%m-%d %H:%M:%S&amp;#39;,time.localtime())
+
+
+Python 获取网页信息
+d...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Git Pro 读书简记</title>
+    <link href="/posts/pro-git/" rel="alternate" type="text/html" title="Git Pro 读书简记" />
+    <published>2023-03-05T08:00:00+08:00</published>
+  
+    <updated>2023-03-05T08:00:00+08:00</updated>
+  
+    <id>/posts/pro-git/</id>
+    <content src="/posts/pro-git/" />
+    <author>
+      <name>Calvin</name>
+    </author>
+
+  
+    
+    <category term="技术" />
+    
+  
+
+  <summary>Git是一个非常好的版本管理工具，一般只用到了一些常用的命令做简单的备份回退等。最近结合《ProGit》和《Git权威指南》进行了查漏补缺和更系统深入的学习，下面是结合ProGit一书做的读书简记。
+
+起步
+
+
+
+1 初次运行Git前的配置
+
+Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为的配置变量。这些变量存储在三个不同的位置：
+
+
+  . /etc/gitconfig 文件: 包含系统上每一个用户及他们仓库的通用配置。 如果使用带有 –system 选项的git config 时，它会从此文件读写配置变量。
+  . ~/.gitconfig 或 ~/.config/git/config 文件：只针对当前用户。 可以传递 –global 选项让 Git读写此文件。
+  . 当前使用仓库的 Git 目录中的 config 文件（就是 .git/con...</summary>
+
+  </entry>
 
   
   <entry>
@@ -101,126 +222,6 @@ function shuffle(arr) {
 
   
     采用 web 实现，这样表现力强一点，选择了 bootstrap 框架做为...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>C# Async Await 探究</title>
-    <link href="/posts/csharp-async-await/" rel="alternate" type="text/html" title="C# Async Await 探究" />
-    <published>2021-08-12T15:14:00+08:00</published>
-  
-    <updated>2024-11-10T08:10:33+08:00</updated>
-  
-    <id>/posts/csharp-async-await/</id>
-    <content src="/posts/csharp-async-await/" />
-    <author>
-      <name>Calvin</name>
-    </author>
-
-  
-    
-    <category term="技术" />
-    
-  
-
-  <summary>这篇文章源于同事问我的一个问题, async await 会不会创建新的线程?
-
-当时直观的感觉是会创建，觉得 async await 只是语法糖，当前线程没有被 block，而后台肯定需要做事，所以必然会创建新的线程去执行任务才对。
-
-然而查了文档，发现官方文档明确说明： async 和 await 关键字不会创建其他线程。 因为异步方法不会在其自身线程上运行，因此它不需要多线程。
-
-参考：https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#threads
-
-如果没有创建线程，到底谁在后台执行任务呢？带着这个问题，好好捋一下 async await 这个新特性。
-
-子线程
-在没有 async 和 awai...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>解决端口占用问题</title>
-    <link href="/posts/fix-port-in-use-issue/" rel="alternate" type="text/html" title="解决端口占用问题" />
-    <published>2021-08-01T17:15:00+08:00</published>
-  
-    <updated>2024-11-10T08:10:33+08:00</updated>
-  
-    <id>/posts/fix-port-in-use-issue/</id>
-    <content src="/posts/fix-port-in-use-issue/" />
-    <author>
-      <name>Calvin</name>
-    </author>
-
-  
-    
-    <category term="技术" />
-    
-  
-
-  <summary>端口被占用是指当你的可执行程序运行时需要在某个端口侦听时，发现该端口被其他程序给占用了，导致该应用程序无法执行。
-
-如: jekyll 默认需要在端口 4000 侦听，当被占用的时候，会显示错误 Permission denied - bind for 127.0.0.1:4000
-
-本地的 4000 端口被占用。
-
-解决方法
-
-
-  
-    查看端口的占用情况
-
-    # 查看端口占用情况
-netstat -ano
-# 也可以使用 find 过滤
-netstat -ano | find &amp;quot;4000&amp;quot;
-    
-
-    参数：
-
-    
-      -a：显示所有链接和侦听端口
-      -n：以数字形式显示地址和端口号
-      -o：显示拥有的与每个连接关联的进程 ID 即 PID
-    
-  
-  
-    查看当前占用端口服务
-
-    tasklist /sv...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>汇编语言基础</title>
-    <link href="/posts/assembly-primer/" rel="alternate" type="text/html" title="汇编语言基础" />
-    <published>2021-07-17T09:41:00+08:00</published>
-  
-    <updated>2024-11-10T08:10:33+08:00</updated>
-  
-    <id>/posts/assembly-primer/</id>
-    <content src="/posts/assembly-primer/" />
-    <author>
-      <name>Calvin</name>
-    </author>
-
-  
-    
-    <category term="技术" />
-    
-  
-
-  <summary>最近查一些文章，涉及到了汇编语言，所以翻出一些资料复习一下。
-
-我们平常学习的编程语言，如 C, C++, Java, C#,Python等等都是高级语言。我们也都知道，机器只能理解执行0101的代码，那高级语言如何转换为机器语言的？
-
-其实高级语言是通过编译器转换为机器语言的，在编译过程中间会生成一个过渡性的语言，叫汇编语言，高级语言屏蔽了实现的细节，如对内存的操作，而汇编语言是低级语言，是通过指令直接对硬件，如CPU的寄存器和内存进行操作的语言，早期的程序员也是直接写汇编语言来控制程序运行，了解汇编语言有助于明白底层的实现，进而可以增加排错能力，以及优化代码。
-
-一点背景
-
-汇编语言是针对CPU设计的，每一种CPU都有自己的汇编指令集，所以针对不同的CPU的汇编语言写法是不一样的，比如 ARM(安卓手机CPU) 和 Intel(常用PC CPU) 他们的指令格式是不一样的。 即便...</summary>
 
   </entry>
 
