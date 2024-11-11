@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Calvin's Blog</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2024-11-11T08:43:31+08:00</updated>
+  <updated>2024-11-11T08:44:53+08:00</updated>
   <author>
     <name>Calvin</name>
     <uri>/</uri>
@@ -24,7 +24,7 @@
     <link href="/posts/web-real-time-communication/" rel="alternate" type="text/html" title="Web实时通信的几种方式" />
     <published>2024-09-07T09:46:00+08:00</published>
   
-    <updated>2024-09-07T09:46:00+08:00</updated>
+    <updated>2024-11-11T08:44:19+08:00</updated>
   
     <id>/posts/web-real-time-communication/</id>
     <content src="/posts/web-real-time-communication/" />
