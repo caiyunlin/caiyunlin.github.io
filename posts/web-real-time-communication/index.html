@@ -30,25 +30,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Javascript 对象继承" />
+<meta property="og:title" content="Web实时通信的几种方式" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="description" content="Javascript 没有直接的对象继承，可以通过原型继承的方式来实现，下面是一种实现方法。 定义父类 将方法写到原型（prototype)上 ```javascript function Person(name, age) { this.name = name; this.age = age; };" />
-<meta property="og:description" content="Javascript 没有直接的对象继承，可以通过原型继承的方式来实现，下面是一种实现方法。 定义父类 将方法写到原型（prototype)上 ```javascript function Person(name, age) { this.name = name; this.age = age; };" />
-<link rel="canonical" href="/posts/javascript-inherit/" />
-<meta property="og:url" content="/posts/javascript-inherit/" />
+<meta name="description" content="在 Web 应用中，实时通信非常关键，无论是消息传递、通知还是数据更新。为了实现实时通信，通常使用 HTTP 轮询、服务器推送事件（SSE）、WebSocket 和 WebHooks 四种方法。本文将深入探讨它们的工作原理、适用场景及示例。" />
+<meta property="og:description" content="在 Web 应用中，实时通信非常关键，无论是消息传递、通知还是数据更新。为了实现实时通信，通常使用 HTTP 轮询、服务器推送事件（SSE）、WebSocket 和 WebHooks 四种方法。本文将深入探讨它们的工作原理、适用场景及示例。" />
+<link rel="canonical" href="/posts/web-real-time-communication/" />
+<meta property="og:url" content="/posts/web-real-time-communication/" />
 <meta property="og:site_name" content="Calvin’s Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-04-28T19:16:45+08:00" />
+<meta property="article:published_time" content="2024-09-07T09:46:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Javascript 对象继承" />
+<meta property="twitter:title" content="Web实时通信的几种方式" />
 <meta name="twitter:site" content="@" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-10T08:10:33+08:00","datePublished":"2018-04-28T19:16:45+08:00","description":"Javascript 没有直接的对象继承，可以通过原型继承的方式来实现，下面是一种实现方法。 定义父类 将方法写到原型（prototype)上 ```javascript function Person(name, age) { this.name = name; this.age = age; };","headline":"Javascript 对象继承","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/javascript-inherit/"},"url":"/posts/javascript-inherit/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T09:46:00+08:00","datePublished":"2024-09-07T09:46:00+08:00","description":"在 Web 应用中，实时通信非常关键，无论是消息传递、通知还是数据更新。为了实现实时通信，通常使用 HTTP 轮询、服务器推送事件（SSE）、WebSocket 和 WebHooks 四种方法。本文将深入探讨它们的工作原理、适用场景及示例。","headline":"Web实时通信的几种方式","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/web-real-time-communication/"},"url":"/posts/web-real-time-communication/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
-    <title>Javascript 对象继承 | Calvin's Blog
+    <title>Web实时通信的几种方式 | Calvin's Blog
     </title>
   
     <!--
@@ -410,7 +410,7 @@
         
           
             
-              <span>Javascript 对象继承</span>
+              <span>Web实时通信的几种方式</span>
             
 
           
@@ -493,6 +493,16 @@
   
 
   
+
+  
+  
+
+  
+
+  
+  
+
+  
     
     
 
@@ -533,18 +543,30 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
-  
-
-  
-  
-
-  
-
-  
-  
-
   
 
   
@@ -562,7 +584,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Javascript 对象继承</h1>
+    <h1 data-toc-skip>Web实时通信的几种方式</h1>
     
 
     <div class="post-meta text-muted">
@@ -579,41 +601,18 @@
 
 <time
   
-  data-ts="1524914205"
+  data-ts="1725673560"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2018/04/28
+  2024/09/07
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          更新于
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1731197433"
-  data-df="YYYY/MM/DD"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  2024/11/10
-</time>
-
-        </span>
       
 
       
@@ -657,9 +656,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="216 字"
+  title="1360 字"
 >
-  <em>1 分钟</em>阅读</span>
+  <em>7 分钟</em>阅读</span>
 
         </div>
       </div>
@@ -667,9 +666,19 @@
   </header>
 
   <div class="content">
-    <p>Javascript 没有直接的对象继承，可以通过原型继承的方式来实现，下面是一种实现方法。</p>
-<h2 id="定义父类"><span class="me-2">定义父类</span><a href="#定义父类" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>将方法写到原型（prototype)上</p>
+    <p>在 Web 应用中，实时通信非常关键，无论是消息传递、通知还是数据更新。为了实现实时通信，通常使用 HTTP 轮询、服务器推送事件（SSE）、WebSocket 和 WebHooks 四种方法。本文将深入探讨它们的工作原理、适用场景及示例。</p>
+
+<h4 id="1-http-轮询"><span class="me-2">1. HTTP 轮询</span><a href="#1-http-轮询" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p><strong>工作原理</strong>：HTTP 轮询是一种最基础的通信方法，客户端定期向服务器发送请求，查询是否有新数据。即使没有更新，服务器也会响应，这种“问询”式的通信导致资源浪费。</p>
+
+<p><strong>优点</strong>：实现简单，对服务器和客户端要求较低，适合小型应用。</p>
+
+<p><strong>缺点</strong>：当请求频繁时，容易增加服务器负载；不适合数据更新较快的应用。</p>
+
+<p><strong>示例</strong>：假设有一个天气应用，用户每隔几分钟检查天气更新。由于不需要即时更新，应用可以采用 HTTP 轮询，每 5 分钟请求一次天气数据。</p>
+
+<p>客户端（JavaScript）</p>
 <div class="language-javascript highlighter-rouge"><div class="code-header">
         <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -680,17 +689,69 @@
 6
 7
 8
-</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nf">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
-<span class="p">};</span>
+9
+</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nf">fetchUpdates</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nf">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">/weather/updates</span><span class="dl">'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nf">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nf">json</span><span class="p">())</span>
+    <span class="p">.</span><span class="nf">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Updates:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span><span class="p">))</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">greeting</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hi! I</span><span class="se">\'</span><span class="s1">m </span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">.</span><span class="dl">'</span><span class="p">);</span>
-<span class="p">};</span>
+<span class="c1">// 每 5 秒发送一次请求</span>
+<span class="nf">setInterval</span><span class="p">(</span><span class="nx">fetchUpdates</span><span class="p">,</span> <span class="mi">5000</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="定义子类"><span class="me-2">定义子类</span><a href="#定义子类" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>服务器（Node.js/Express）</p>
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nf">express</span><span class="p">();</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/weather/updates</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">json</span><span class="p">({</span> <span class="na">update</span><span class="p">:</span> <span class="dl">'</span><span class="s1">New data available</span><span class="dl">'</span> <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nf">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Server running on port 3000</span><span class="dl">'</span><span class="p">));</span>
+
+</pre></td></tr></tbody></table></code></div></div>
+
+<h4 id="2-服务器推送事件sse"><span class="me-2">2. 服务器推送事件（SSE）</span><a href="#2-服务器推送事件sse" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p><strong>工作原理</strong>：SSE 允许服务器向客户端推送更新，客户端通过建立一次 HTTP 长连接，服务器即可连续向客户端发送数据。数据仅从服务器流向客户端（单向通信）。</p>
+
+<p><strong>优点</strong>：轻量级且高效，适合频繁但单向的数据更新。</p>
+
+<p><strong>缺点</strong>：仅支持从服务器到客户端的单向通信，不适用于需要双向互动的场景。</p>
+
+<p><strong>示例</strong>：比如新闻网站可以使用 SSE 将实时更新的新闻推送到用户浏览器。用户打开新闻页后，浏览器便可以持续接收到最新新闻，无需刷新页面。</p>
+
+<p>客户端（JavaScript）</p>
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">eventSource</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">EventSource</span><span class="p">(</span><span class="dl">'</span><span class="s1">/stream</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">eventSource</span><span class="p">.</span><span class="nx">onmessage</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Update from server:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">};</span>
+
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>服务器（Node.js/Express）</p>
 <div class="language-javascript highlighter-rouge"><div class="code-header">
         <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -708,32 +769,34 @@
 13
 14
 15
-16
-17
-18
-19
-</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nf">Teacher</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">title</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">//初始化父类的属性</span>
-  <span class="nx">Person</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">);</span>
-  <span class="c1">//Person.apply(this,[name,age]);</span>
-  <span class="c1">//初始化子类的属性</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="nx">title</span>
-<span class="p">}</span>
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nf">express</span><span class="p">();</span>
 
-<span class="c1">//继承父类的方法</span>
-<span class="nx">Teacher</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/stream</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">setHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">text/event-stream</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">setHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cache-Control</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">no-cache</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">setHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">Connection</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">keep-alive</span><span class="dl">'</span><span class="p">);</span>
 
-<span class="c1">//将构造器指回Teacher，一般情况下可省略，详见 https://stackoverflow.com/questions/8453887/why-is-it-necessary-to-set-the-prototype-constructor</span>
-<span class="nx">Teacher</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="kd">constructor</span> <span class="o">=</span> <span class="nx">Teacher</span><span class="p">;</span>
+  <span class="nf">setInterval</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="s2">`data: </span><span class="p">${</span><span class="nx">JSON</span><span class="p">.</span><span class="nf">stringify</span><span class="p">({</span> <span class="na">update</span><span class="p">:</span> <span class="dl">'</span><span class="s1">New data available</span><span class="dl">'</span> <span class="p">})}</span><span class="s2">\n\n`</span><span class="p">);</span>
+  <span class="p">},</span> <span class="mi">5000</span><span class="p">);</span>
+<span class="p">});</span>
 
+<span class="nx">app</span><span class="p">.</span><span class="nf">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Server running on port 3000</span><span class="dl">'</span><span class="p">));</span>
 
-<span class="c1">//设置子类的方法</span>
-<span class="nx">Teacher</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayHello</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-   <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hi! I</span><span class="se">\'</span><span class="s1">m </span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">. My title is </span><span class="dl">'</span><span class="o">+</span><span class="k">this</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span>
-<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="实例化"><span class="me-2">实例化</span><a href="#实例化" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h4 id="3-websocket"><span class="me-2">3. WebSocket</span><a href="#3-websocket" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p><strong>工作原理</strong>：WebSocket 允许双向通信。客户端与服务器建立连接后，双方可以实时发送和接收数据。这种方法适合需要快速响应的场景。</p>
+
+<p><strong>优点</strong>：双向通信、实时性高，适合高频互动的应用，如聊天、游戏。</p>
+
+<p><strong>缺点</strong>：需要建立和维护 WebSocket 连接，对服务器性能要求较高。</p>
+
+<p><strong>示例</strong>：即时聊天应用，如 Slack 或微信聊天。当用户发送消息时，服务器会即时传递给其他用户，确保所有人实时收到消息。</p>
+
+<p>客户端(JavaScript)</p>
 <div class="language-javascript highlighter-rouge"><div class="code-header">
         <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -741,12 +804,130 @@
 3
 4
 5
-</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">teacher1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Teacher</span><span class="p">(</span><span class="dl">'</span><span class="s1">Allen</span><span class="dl">'</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span><span class="dl">'</span><span class="s1">title1</span><span class="dl">'</span><span class="p">)</span>
-<span class="nx">teacher1</span><span class="p">.</span><span class="nf">sayHello</span><span class="p">();</span>
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">WebSocket</span><span class="p">(</span><span class="dl">'</span><span class="s1">ws://localhost:3000</span><span class="dl">'</span><span class="p">);</span>
 
-<span class="kd">var</span> <span class="nx">teacher2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Teacher</span><span class="p">(</span><span class="dl">'</span><span class="s1">Bob</span><span class="dl">'</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span><span class="dl">'</span><span class="s1">title1</span><span class="dl">'</span><span class="p">)</span>
-<span class="nx">teacher1</span><span class="p">.</span><span class="nf">greeting</span><span class="p">();</span>
+<span class="nx">socket</span><span class="p">.</span><span class="nx">onopen</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">WebSocket connection established</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello Server!</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="nx">socket</span><span class="p">.</span><span class="nx">onmessage</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Message from server:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">};</span>
 </pre></td></tr></tbody></table></code></div></div>
+
+<p>服务器（Node.js/ws）</p>
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">WebSocket</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">ws</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WebSocket</span><span class="p">.</span><span class="nc">Server</span><span class="p">({</span> <span class="na">port</span><span class="p">:</span> <span class="mi">3000</span> <span class="p">});</span>
+
+<span class="nx">server</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">connection</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">socket</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Client connected</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Message from client:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">message</span><span class="p">);</span>
+    <span class="nx">socket</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="s2">`Echo: </span><span class="p">${</span><span class="nx">message</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h4 id="4-webhooks"><span class="me-2">4. WebHooks</span><a href="#4-webhooks" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p><strong>工作原理</strong>：WebHooks 是一种服务器到服务器的通信方式，当一个服务器上的事件触发时，会自动向另一个服务器发送通知。例如，A 应用中的事件发生后，通知 B 应用执行特定任务。</p>
+
+<p><strong>优点</strong>：适合跨应用通知和自动化任务。</p>
+
+<p><strong>缺点</strong>：只能用于服务器间的事件触发，通常不直接面对终端用户。</p>
+
+<p><strong>示例</strong>：GitHub 提交代码后，触发 CI/CD 系统的构建过程。每次代码提交都会通过 WebHook 通知构建服务器启动编译和测试流程。</p>
+
+<p>触发服务器（Node.js/Express），这里一般其实是配置到触发端，比如 GitHub / Azure DevOps 的 webhook</p>
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nf">express</span><span class="p">();</span>
+<span class="nx">app</span><span class="p">.</span><span class="nf">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="nf">json</span><span class="p">());</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/trigger-event</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nf">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://another-server.com/webhook</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">headers</span><span class="p">:</span> <span class="p">{</span> <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span> <span class="p">},</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nf">stringify</span><span class="p">({</span> <span class="na">event</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Data Updated</span><span class="dl">'</span> <span class="p">})</span>
+  <span class="p">});</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">Webhook triggered</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nf">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Server running on port 3000</span><span class="dl">'</span><span class="p">));</span>
+
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>接收服务器</p>
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nf">express</span><span class="p">();</span>
+<span class="nx">app</span><span class="p">.</span><span class="nf">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="nf">json</span><span class="p">());</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/webhook</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Webhook received:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">sendStatus</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nf">listen</span><span class="p">(</span><span class="mi">4000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Server listening on port 4000</span><span class="dl">'</span><span class="p">));</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h4 id="如何选择合适的技术"><span class="me-2">如何选择合适的技术</span><a href="#如何选择合适的技术" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>选择适合的实时通信方式时，需考虑数据更新频率、是否需要双向通信以及应用规模：</p>
+
+<ul>
+  <li><strong>HTTP 轮询</strong>：简单且适合不频繁的数据更新；</li>
+  <li><strong>SSE</strong>：当数据频繁更新且只需服务器向客户端发送时最适合；</li>
+  <li><strong>WebSocket</strong>：用于实时双向通信，适合互动性强的应用；</li>
+  <li><strong>WebHooks</strong>：适用于系统集成场景。</li>
+</ul>
+
+<p>每种方式在不同场景下表现出色，结合具体需求进行选择，能够优化应用性能和用户体验。</p>
 
 <p>【全文完】</p>
 
@@ -768,9 +949,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/javascript/"
+            href="/tags/http/"
             class="post-tag no-text-decoration"
-          >javascript</a>
+          >http</a>
         
       </div>
     
@@ -806,21 +987,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Javascript%20%E5%AF%B9%E8%B1%A1%E7%BB%A7%E6%89%BF%20-%20Calvin's%20Blog&url=%2Fposts%2Fjavascript-inherit%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Web%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%20-%20Calvin's%20Blog&url=%2Fposts%2Fweb-real-time-communication%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Javascript%20%E5%AF%B9%E8%B1%A1%E7%BB%A7%E6%89%BF%20-%20Calvin's%20Blog&u=%2Fposts%2Fjavascript-inherit%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Web%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%20-%20Calvin's%20Blog&u=%2Fposts%2Fweb-real-time-communication%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=%2Fposts%2Fjavascript-inherit%2F&text=Javascript%20%E5%AF%B9%E8%B1%A1%E7%BB%A7%E6%89%BF%20-%20Calvin's%20Blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2Fweb-real-time-communication%2F&text=Web%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%20-%20Calvin's%20Blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1715,11 +1896,6 @@
 
 
 
-  <section id="toc-wrapper" class="d-none ps-0 pe-4">
-    <h2 class="panel-heading ps-3 mb-2">文章内容</h2>
-    <nav id="toc"></nav>
-  </section>
-
 
             
           </aside>
@@ -1937,211 +2113,211 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2193,7 +2369,7 @@
         </article>
       
         <article class="col">
-          <a href="/posts/angular-dynamic-loading/" class="post-preview card h-100">
+          <a href="/posts/useful-softwares/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2205,32 +2381,35 @@
 
 <time
   
-  data-ts="1469101065"
+  data-ts="1496674200"
   data-df="YYYY/MM/DD"
   
 >
-  2016/07/21
+  2017/06/05
 </time>
 
-              <h4 class="pt-0 my-2">AngularJS 动态加载的思考</h4>
+              <h4 class="pt-0 my-2">Windows 下好用的软件整理</h4>
               <div class="text-muted">
-                <p>本文使用的AngularJS是基于1.x版本的。
+                <p>工欲善其事必先利其器。
 
-使用AngularJS做前端，路由都是静态配置的，久而久之发现每次新增加一个模块都要配置一下路由，实在有些麻烦，遂研究了一下能否动态配置路由信息
+给大家分享一下我常用的感觉比较好的软件。
 
-现状
+桌面截屏 - FSCapture
 
-项目中使用的是ui-router，因为要支持多级路由，所以没有使用默认的路由，代码如下
+桌面截屏 - FSCapture
+	非常简单的截图小软件，可以添加水平印，也可以对图像进行简单处理。 可设置水印、撕边、阴影等效果！ 软件还附带放大镜，拾色器，屏幕标尺等小功能。 本站的截图基本是用它在处理的。 
+	
 
-angular.module(&#39;app&#39;)
-.config(function ($statePr...</p>
+桌面动态截屏 - LICEcap
+
+桌面动态截屏 - LICEcap...</p>
               </div>
             </div>
           </a>
         </article>
       
         <article class="col">
-          <a href="/posts/gift-exchange/" class="post-preview card h-100">
+          <a href="/posts/how-to-create-ps-function/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2242,37 +2421,18 @@ angular.module(&#39;app&#39;)
 
 <time
   
-  data-ts="1640416440"
+  data-ts="1480661160"
   data-df="YYYY/MM/DD"
   
 >
-  2021/12/25
+  2016/12/02
 </time>
 
-              <h4 class="pt-0 my-2">圣诞特辑-交换礼物</h4>
+              <h4 class="pt-0 my-2">如何创建标准的 PowerShell 函数</h4>
               <div class="text-muted">
-                <p>圣诞节到了，Team里面的小伙伴组织了一个交换礼物的活动，我也奉命接下了写个小工具的任务。
+                <p>PowerShell有很多内置的命令，我们自己也会创建很多自定义的脚本，上一篇介绍了我创建的一个在线PowerTask类库就是自定义的脚本，其显示的方式跟默认的命令很类似，如何使自己创建的脚本能有系统自带的命令一样的体验呢？
 
-需求
-
-需求很简单，就是将 人员名单 和 礼物清单 排成两列，然后随机摇出新的匹对，这样每个人就得到了新的礼物。
-
-
-
-算法
-
-核心算法其实很简单，就是将数组进行随机乱序排列，代码如下
-
-从后往前遍历，随机一个前面的数的坐标和当前数交换，所有位置的数字都交换完成
-
-1
-2
-3
-4
-5
-6
-7
-fun...</p>
+答案就在于Function，在Windows PowerShell 2.0 中引入了一种新类型的Function，叫Advanced Function，通过它你可以创...</p>
               </div>
             </div>
           </a>
@@ -2293,22 +2453,18 @@ fun...</p>
 
   
     <a
-      href="/posts/export-excel/"
+      href="/posts/how-to-prepare-az-305/"
       class="btn btn-outline-primary"
       aria-label="上一篇"
     >
-      <p>一个简便的 Excel 导出方案</p>
+      <p>如何准备 AZ-305 考试</p>
     </a>
   
 
   
-    <a
-      href="/posts/javascript-async-await/"
-      class="btn btn-outline-primary"
-      aria-label="下一篇"
-    >
-      <p>如何在 JavaScript 中使用 Async Await</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="下一篇">
+      <p>-</p>
+    </div>
   
 </nav>
 
@@ -3323,10 +3479,6 @@ fun...</p>
 
   
     <script src="/assets/lib/dayjs/plugin/localizedFormat.min.js"></script>
-  
-
-  
-    <script src="/assets/lib/tocbot/tocbot.min.js"></script>
   
 
 

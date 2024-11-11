@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Calvin's Blog</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2024-11-11T06:12:26+08:00</updated>
+  <updated>2024-11-11T08:43:31+08:00</updated>
   <author>
     <name>Calvin</name>
     <uri>/</uri>
@@ -17,6 +17,44 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Web实时通信的几种方式</title>
+    <link href="/posts/web-real-time-communication/" rel="alternate" type="text/html" title="Web实时通信的几种方式" />
+    <published>2024-09-07T09:46:00+08:00</published>
+  
+    <updated>2024-09-07T09:46:00+08:00</updated>
+  
+    <id>/posts/web-real-time-communication/</id>
+    <content src="/posts/web-real-time-communication/" />
+    <author>
+      <name>Calvin</name>
+    </author>
+
+  
+    
+    <category term="技术" />
+    
+  
+
+  <summary>在 Web 应用中，实时通信非常关键，无论是消息传递、通知还是数据更新。为了实现实时通信，通常使用 HTTP 轮询、服务器推送事件（SSE）、WebSocket 和 WebHooks 四种方法。本文将深入探讨它们的工作原理、适用场景及示例。
+
+1. HTTP 轮询
+
+工作原理：HTTP 轮询是一种最基础的通信方法，客户端定期向服务器发送请求，查询是否有新数据。即使没有更新，服务器也会响应，这种“问询”式的通信导致资源浪费。
+
+优点：实现简单，对服务器和客户端要求较低，适合小型应用。
+
+缺点：当请求频繁时，容易增加服务器负载；不适合数据更新较快的应用。
+
+示例：假设有一个天气应用，用户每隔几分钟检查天气更新。由于不需要即时更新，应用可以采用 HTTP 轮询，每 5 分钟请求一次天气数据。
+
+客户端（JavaScript）
+function fetchUpdates() {
+  fetc...</summary>
+
+  </entry>
 
   
   <entry>
@@ -171,57 +209,6 @@ Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为�
 
 
   Docker is written in the Go programming language and takes advantage of several features of the Linux kernel to deliver its f...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>圣诞特辑-交换礼物</title>
-    <link href="/posts/gift-exchange/" rel="alternate" type="text/html" title="圣诞特辑-交换礼物" />
-    <published>2021-12-25T15:14:00+08:00</published>
-  
-    <updated>2024-11-10T08:10:33+08:00</updated>
-  
-    <id>/posts/gift-exchange/</id>
-    <content src="/posts/gift-exchange/" />
-    <author>
-      <name>Calvin</name>
-    </author>
-
-  
-    
-    <category term="技术" />
-    
-  
-
-  <summary>圣诞节到了，Team里面的小伙伴组织了一个交换礼物的活动，我也奉命接下了写个小工具的任务。
-
-需求
-
-需求很简单，就是将 人员名单 和 礼物清单 排成两列，然后随机摇出新的匹对，这样每个人就得到了新的礼物。
-
-
-
-算法
-
-核心算法其实很简单，就是将数组进行随机乱序排列，代码如下
-
-从后往前遍历，随机一个前面的数的坐标和当前数交换，所有位置的数字都交换完成
-
-function shuffle(arr) {
-    let i = arr.length;
-    while (i) {
-        let j = Math.floor(Math.random() * i--);
-        [arr[j], arr[i]] = [arr[i], arr[j]];
-    }
-}
-
-
-代码
-
-
-  
-    采用 web 实现，这样表现力强一点，选择了 bootstrap 框架做为...</summary>
 
   </entry>
 
