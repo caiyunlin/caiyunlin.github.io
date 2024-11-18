@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Calvin's Blog</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2024-11-17T22:15:33+08:00</updated>
+  <updated>2024-11-18T08:36:36+08:00</updated>
   <author>
     <name>Calvin</name>
     <uri>/</uri>
@@ -187,11 +187,11 @@ d...</summary>
 
   
   <entry>
-    <title>Git Pro 读书简记</title>
-    <link href="/posts/pro-git/" rel="alternate" type="text/html" title="Git Pro 读书简记" />
+    <title>Pro Git 读书简记</title>
+    <link href="/posts/pro-git/" rel="alternate" type="text/html" title="Pro Git 读书简记" />
     <published>2023-03-05T08:00:00+08:00</published>
   
-    <updated>2023-03-05T08:00:00+08:00</updated>
+    <updated>2024-11-18T08:35:58+08:00</updated>
   
     <id>/posts/pro-git/</id>
     <content src="/posts/pro-git/" />
